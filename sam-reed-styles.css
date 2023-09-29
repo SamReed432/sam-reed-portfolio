@@ -1,4 +1,7 @@
-
+body {
+	width: 100%;
+	margin: 0;
+}
 
 header {
 	font-family: 'Share Tech Mono', monospace;
@@ -138,6 +141,11 @@ nav a {
 	to {opacity: 100%}
 }
 
+@keyframes slide_in_bottom {
+	from {opacity: 0%; margin-top: 5vw;}
+	to {opacity: 100%}
+}
+
 #main_content_right {
 	width: 50%;
 	display: flex;
@@ -182,6 +190,17 @@ footer {
 	bottom: 1vw;
 	display: flex;
 	justify-content: space-around;
+	
+	background-color: rgba(245,245,245,1.00);
+	
+	margin-bottom: -1.5vw;
+	padding-top: 0.4vw;
+	height: 3vw;
+	
+}
+
+.footer_img {
+	width: 2vw;
 }
 
 /*Project Page CSS */
@@ -325,4 +344,91 @@ h2 {
 	header {
 		font-size: 2vw;
 	}
+}
+
+
+/*PROJECTS PAGES*/
+
+.personal_project {
+	border: blueviolet thick solid;
+	border-radius: 1vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	color: black;
+	color: black;
+	
+	margin: 3vw;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+	opacity: 0%;
+	
+	
+	animation: slide_in_bottom 2s;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;
+}
+
+.personal_project_home {
+	border: blueviolet thick solid;
+	border-radius: 1vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	color: black;
+	color: black;
+	
+	margin: 3vw;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+	opacity: 0%;
+	
+	
+	animation: slide_in_bottom 2s;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+}
+
+.proj_name {
+	font-family: 'Share Tech Mono', monospace;
+	font-weight: 200;
+	font-size: 2vw;
+}
+
+.personal_proj_description {
+	font-family: 'Share Tech Mono', monospace;
+}
+
+.personal_proj_image {
+	width: 15%;
+	border-radius: 1vw;
+	margin: 1vw;
+}
+
+.proj_desription_block {
+	width: 50%;
+}
+
+.title {
+	font-family: 'Share Tech Mono', monospace;
+	border-right: .10em solid transparent;
+	font-size: 2vw;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-left: 4vw;;
+	letter-spacing: .15em;
+	text-align: left;
+	animation: 
+		typingE 2.5s steps(18, end),
+		blink-caret .8s step-end infinite;
+	animation-fill-mode: forwards;
+}
+
+@keyframes typingE {
+	from {width: 0;  opacity: 100%;}
+	to { width: 25%; opacity: 100%;}
 }
