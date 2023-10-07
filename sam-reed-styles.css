@@ -1,6 +1,7 @@
 body {
 	width: 100%;
 	margin: 0;
+	background-color: rgba(221, 241, 244, 0.7);
 }
 
 header {
@@ -73,8 +74,8 @@ nav a {
 	letter-spacing: .10em;
 	text-align: left;
 	animation: 
-		typingA 1s steps(6, end),
-		blink-caret .6s step-end 2;
+		typingA 0.5s steps(6, end),
+		blink-caret .6s step-end 1;
 }
 
 #name_is{
@@ -87,10 +88,10 @@ nav a {
 	letter-spacing: .15em;
 	text-align: left;
 	animation: 
-		typingB 2.5s steps(14, end),
+		typingB 2s steps(14, end),
 		blink-caret .55s step-end 5,
 		blink-caret .8s step-end infinite;
-	animation-delay: 1.5s;
+	animation-delay: 0.75s;
 	animation-fill-mode: forwards;
 }
 
@@ -126,7 +127,7 @@ nav a {
 	font-size: 1.5vw;
 	width: 100%;
 	animation: slide_in_left 2s;
-	animation-delay: 4s;
+	animation-delay: 3s;
 	opacity: 0%;
 	animation-fill-mode: forwards;
 }
@@ -152,7 +153,7 @@ nav a {
 	justify-content: center;
 	align-content: center;
 	animation: slide_in_right 2s;
-	animation-delay: 4s;
+	animation-delay: 3s;
 	opacity: 0%;
 	animation-fill-mode: forwards;
 	margin: 0;
@@ -191,7 +192,7 @@ footer {
 	display: flex;
 	justify-content: space-around;
 	
-	background-color: rgba(245,245,245,1.00);
+	background-color: rgba(245,245,245,0.40);
 	
 	margin-bottom: -1.5vw;
 	padding-top: 0.4vw;
@@ -201,6 +202,39 @@ footer {
 
 .footer_img {
 	width: 2vw;
+}
+
+#project_list {
+	margin-bottom: 5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.personal_project_home {
+	border: blueviolet thick solid;
+	border-radius: 1vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	color: black;
+	color: black;
+	
+	margin: 3vw;
+	margin-left: 6vw;
+	margin-right: 6vw;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+	opacity: 0%;
+	
+	
+	animation: slide_in_bottom 2s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
 }
 
 /*Project Page CSS */
@@ -215,7 +249,7 @@ footer {
 
 .attributes_block {
 	margin: 5vw;
-	margin-top: 0vw;
+	margin-top: 1vw;
 	padding: 0;
 	display: flex;
 	flex-direction: row;
@@ -241,7 +275,7 @@ footer {
 }
 
 #title_li {
-	background-color: white;
+	background-color: rgba(0,0,0,0.00);
 	color:black;
 	border: none;
 	font-size: 1.5vw;
@@ -294,8 +328,8 @@ h2 {
 	height: auto;
 }
 
-#proj_description_title {
-	background-color: white;
+.proj_description_title {
+	background-color: rgba(0,0,0,0.00);
 	color:black;
 	border: none;
 	font-size: 1.5vw;
@@ -303,6 +337,7 @@ h2 {
 	font-weight: 600;
 	margin: 3vw;
 	margin-bottom: 1vw;
+	padding-bottom: 1vw;
 }
 
 .proj_description {
@@ -357,7 +392,7 @@ h2 {
 	color: black;
 	color: black;
 	
-	margin: 3vw;
+	margin-top: 2vw;
 	
 	display: flex;
 	flex-direction: row;
@@ -365,33 +400,13 @@ h2 {
 	
 	opacity: 0%;
 	
-	
 	animation: slide_in_bottom 2s;
-	animation-delay: 2.5s;
+	animation-delay: 1s;
 	animation-fill-mode: forwards;
+	
+	width: 70%;
 }
 
-.personal_project_home {
-	border: blueviolet thick solid;
-	border-radius: 1vw;
-	padding-left: 1vw;
-	padding-right: 1vw;
-	color: black;
-	color: black;
-	
-	margin: 3vw;
-	
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	
-	opacity: 0%;
-	
-	
-	animation: slide_in_bottom 2s;
-	animation-delay: 4s;
-	animation-fill-mode: forwards;
-}
 
 .proj_name {
 	font-family: 'Share Tech Mono', monospace;
@@ -404,13 +419,16 @@ h2 {
 }
 
 .personal_proj_image {
-	width: 15%;
+	width: 30%;
+	object-fit: scale-down;
 	border-radius: 1vw;
 	margin: 1vw;
 }
 
 .proj_desription_block {
-	width: 50%;
+	font-size: 1.25vw;
+	width: 65%;
+	height: 85%;
 }
 
 .title {
@@ -423,7 +441,7 @@ h2 {
 	letter-spacing: .15em;
 	text-align: left;
 	animation: 
-		typingE 2.5s steps(18, end),
+		typingE 1s steps(18, end),
 		blink-caret .8s step-end infinite;
 	animation-fill-mode: forwards;
 }
@@ -431,4 +449,101 @@ h2 {
 @keyframes typingE {
 	from {width: 0;  opacity: 100%;}
 	to { width: 25%; opacity: 100%;}
+}
+
+.link {
+	margin-bottom: 2vw;
+}
+
+#mentions {
+	margin-bottom: 5vw;
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 1.5vw;
+	
+	display: flex;
+	flex-direction: column;
+	margin-left: 5vw;
+	color: black;
+}
+
+/***** ABOUT *****/
+.about_attributes_block {
+	margin: 1vw;
+	margin-left: 0vw;
+	margin-top: 1vw;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	
+	height: 3%;
+		
+	margin-bottom: 3vw;
+	margin-top: -1vw;
+}
+
+.about_attributes_block li {
+	margin: 0.5vw;
+	padding: 1vw;
+	padding-top: 0.5vw;
+	padding-bottom: 0.5vw;
+	border: solid white thin;
+	border-radius: 1vw;
+	background-color: blueviolet;
+	color:white;
+	font-family: 'Martian Mono', monospace;
+	font-weight: 600;
+	font-size: 1.5vw;
+	text-align: center;
+}
+
+#about_main {
+	display: flex;
+	flex-direction: row;
+	flex-flow: space-evenly;
+	margin: 3vw;
+}
+
+#about_left {
+	padding-top: 3vw;
+	padding: 1vw;
+	width: 60%;
+}
+
+#about_right {
+	width: 40%
+}
+
+#about_right img {
+	width: 100%;
+}
+
+.list_title {
+	font-family: monospace;
+	text-align: center;
+	font-size: 2vw;
+}
+
+#about_name {
+	font-family: 'Martian Mono', monospace;
+	text-align: center;
+	font-size: 3vw;
+	margin-top: 5vw;
+	padding-bottom: 1vw;
+}
+
+#about_description {
+	font-family: 'Martian Mono', monospace;
+	text-align: center;
+}
+
+/*****RESUME*****/
+
+#resume_box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
