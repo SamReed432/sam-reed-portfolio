@@ -598,6 +598,18 @@ h2 {
 	color: black;
 }
 
+#about_contant {
+	font-family: 'Martian Mono', monospace;
+	text-align: center;
+	font-size: 1.5vw;
+}
+
+.contact_larger {
+	font-size: 2.5vw;
+	
+	padding-top: 1vw;
+}
+
 /*****RESUME*****/
 
 #resume_box {
