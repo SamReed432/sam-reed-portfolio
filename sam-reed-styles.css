@@ -348,6 +348,7 @@ h2 {
 		typingD 2s steps(9, end),
 		blink-caret .6s step-end 20;
 	opacity: 0;
+	animation-delay: 2s;
 	animation-fill-mode: forwards;
 }
 
