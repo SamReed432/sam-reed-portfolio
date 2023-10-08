@@ -505,9 +505,7 @@ h2 {
 
 /***** ABOUT *****/
 .about_attributes_block {
-	margin: 1vw;
-	margin-left: 0vw;
-	margin-top: 1vw;
+	margin: 0vw;
 	padding: 0;
 	display: flex;
 	flex-direction: row;
@@ -517,14 +515,14 @@ h2 {
 	flex-wrap: wrap;
 	
 	height: 3%;
-		
-	margin-bottom: 3vw;
+
 	margin-top: -1vw;
 }
 
 .about_attributes_block li {
-	margin: 0.5vw;
-	padding: 1vw;
+	margin-left: 0.5vw;
+	margin-right: 0.5vw;
+	padding: 0.5vw;
 	padding-top: 0.5vw;
 	padding-bottom: 0.5vw;
 	border: solid white thin;
@@ -541,7 +539,14 @@ h2 {
 	display: flex;
 	flex-direction: row;
 	flex-flow: space-evenly;
+	justify-content: center;
+	align-items: center;
+	
+	flex-shrink: 3;
+	
 	margin: 3vw;
+	margin-top: -2vw;
+	height: 80%;
 }
 
 #about_left {
@@ -575,6 +580,8 @@ h2 {
 #about_description {
 	font-family: 'Martian Mono', monospace;
 	text-align: center;
+	font-size: 1.2vw;
+	margin-top: -0.6vw;
 }
 
 #person_of_the_week {
@@ -586,6 +593,7 @@ h2 {
 	border-radius: 1.5vw;
 	
 	margin: 3vw;
+	margin-top: -3vw;
 }
 
 #person_of_the_week img {
@@ -602,11 +610,17 @@ h2 {
 	font-family: 'Martian Mono', monospace;
 	text-align: center;
 	font-size: 1.5vw;
+	padding: 0;
+	margin: 0;
+}
+
+#about_contant a {
+	color: black;
+	text-decoration: underline;
 }
 
 .contact_larger {
 	font-size: 2.5vw;
-	
 	padding-top: 1vw;
 }
 
