@@ -329,6 +329,11 @@ h1 {
 	to { width: 34%; opacity: 100%;}
 }
 
+@keyframes typingG {
+	from {width: 0;  opacity: 100%;}
+	to { width: 47%; opacity: 100%;}
+}
+
 h2 {
 	font-family: 'Nunito Sans', sans-serif;
 	font-size: 1.5vw;
@@ -342,8 +347,16 @@ h2 {
 	animation: 
 		typingD 2s steps(9, end),
 		blink-caret .6s step-end 20;
-	animation-delay: 2.2s;
 	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+#school_date{
+	width: 100%;
+	animation: 
+		typingG 2s steps(11, end),
+		blink-caret .6s step-end 20;
+	animation-delay: 2.2s;
 	animation-fill-mode: forwards;
 }
 
@@ -562,6 +575,27 @@ h2 {
 #about_description {
 	font-family: 'Martian Mono', monospace;
 	text-align: center;
+}
+
+#person_of_the_week {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border: blueviolet .25vw solid;
+	border-radius: 1.5vw;
+	
+	margin: 3vw;
+}
+
+#person_of_the_week img {
+	width: 7vw;
+}
+
+#person_of_the_week a {
+	font-family: 'Martian Mono', monospace;
+	font-size: 3vw;
+	color: black;
 }
 
 /*****RESUME*****/
