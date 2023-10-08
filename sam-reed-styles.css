@@ -204,12 +204,34 @@ footer {
 	width: 2vw;
 }
 
-#project_list {
+.project_list {
 	margin-bottom: 5vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+.project_list a {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.school_proj {
+	font-family: 'Share Tech Mono', monospace;
+	border-right: .10em solid transparent;
+	font-size: 2vw;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-left: 4vw;;
+	letter-spacing: .15em;
+	text-align: left;
+	opacity: 0;
+	animation: 
+		slide_in_bottom 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
 }
 
 
@@ -236,6 +258,8 @@ footer {
 	animation-delay: 3s;
 	animation-fill-mode: forwards;
 }
+
+
 
 /*Project Page CSS */
 
