@@ -390,35 +390,6 @@ h2 {
 	border-radius: 1vw;
 }
 
-@media only screen and (max-width: 1200px) {
-	#main_content {
-		flex-direction: column;
-		align-content: center;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		padding: 0;
-	}
-	#main_content_left {
-		width: 80%;
-	}
-	#main_content_right {
-		width: 80%;
-	}
-	#main_content_left_top {
-	font-size: 5.0vw;
-	}
-	#main_content_left_bottom {
-	font-size: 4.0vw;
-	}
-	.home_block img {
-		width: 20vw;
-	}
-	header {
-		font-size: 2vw;
-	}
-}
-
 
 /*PROJECTS PAGES*/
 
@@ -631,4 +602,53 @@ h2 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+/*****HOME PAGE RESPONSIVENESS ****/
+@media only screen and (max-width: 1200px) {
+	#main_content {
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 0;
+	}
+	#main_content_left {
+		width: 80%;
+	}
+	#main_content_right {
+		width: 80%;
+	}
+	#main_content_left_top {
+	font-size: 6vw;
+	}
+	#main_content_left_bottom {
+		font-size: 3.5vw;
+	}
+	#name_is {
+		font-size: 5vw;
+	}
+	.home_block img {
+		width: 20vw;
+	}
+	header {
+		font-size: 4vw;
+	}
+	.home_block p {
+		font-size: 4vw;
+	}
+	.proj_name {
+		font-size: 3vw;
+	}
+	.personal_proj_description {
+		font-size: 2.5vw;
+	}
+}
+
+/************ABOUT PAGE RESPONSIVENESS****************/
+@media only screen and (max-width: 1200px) {
+	#about_right {
+		display: none;
+	}
 }
