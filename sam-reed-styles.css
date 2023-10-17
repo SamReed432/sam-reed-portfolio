@@ -66,7 +66,7 @@ nav a {
 
 .hello {
 	width: 34%;
-	color: blueviolet;
+	color: rgba(71,26,96,1.00);
 	border-right: .10em solid transparent;
 	white-space: nowrap;
 	overflow: hidden;
@@ -236,7 +236,7 @@ footer {
 
 
 .personal_project_home {
-	border: blueviolet thick solid;
+	border: rgba(71,26,96,1.00) thick solid;
 	border-radius: 1vw;
 	padding-left: 1vw;
 	padding-right: 1vw;
@@ -289,7 +289,7 @@ footer {
 	padding-bottom: 0.5vw;
 	border: solid white thin;
 	border-radius: 1vw;
-	background-color: blueviolet;
+	background-color: rgba(71,26,96,1.00);
 	color:white;
 	font-family: 'Martian Mono', monospace;
 	font-weight: 600;
@@ -394,8 +394,11 @@ h2 {
 /*PROJECTS PAGES*/
 
 .personal_project {
-	border: blueviolet thick solid;
-	border-radius: 1vw;
+	border: rgba(71,26,96,1.00) 0.25vw solid;
+	
+	background-color: rgba(0,0,0,0.05);
+	border-radius: 1.3vw;
+	
 	padding-left: 1vw;
 	padding-right: 1vw;
 	color: black;
@@ -499,7 +502,7 @@ h2 {
 	padding-bottom: 0.5vw;
 	border: solid white thin;
 	border-radius: 1vw;
-	background-color: blueviolet;
+	background-color: rgba(71,26,96,1.00);
 	color:white;
 	font-family: 'Martian Mono', monospace;
 	font-weight: 600;
@@ -561,7 +564,7 @@ h2 {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	border: blueviolet .25vw solid;
+	border: rgba(71,26,96,1.00) .25vw solid;
 	border-radius: 1.5vw;
 	
 	margin: 3vw;
