@@ -559,7 +559,7 @@ h2 {
 	margin-top: -0.6vw;
 }
 
-#person_of_the_week {
+#person_of_the_week, #download_div {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -569,6 +569,23 @@ h2 {
 	
 	margin: 3vw;
 	margin-top: -3vw;
+}
+
+#download_div {
+	background-color: rgba(71,26,96,1.00);
+	font-size: 2vw;
+	padding: 1vw;
+	color: white;
+	font-family: 'Martian Mono', monospace;
+	border: gray .25vw solid;
+}
+
+#download_div_box {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 }
 
 #person_of_the_week img {
@@ -598,6 +615,7 @@ h2 {
 	font-size: 2.5vw;
 	padding-top: 1vw;
 }
+
 
 /*****RESUME*****/
 
