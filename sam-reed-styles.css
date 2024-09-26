@@ -6,7 +6,7 @@ body {
 
 header {
 	font-family: 'Share Tech Mono', monospace;
-	font-size: 1.0vw;
+	font-size: 1.5vw;
 	display: flex;
 	flex-grow: 2;
 	justify-content: space-between;
