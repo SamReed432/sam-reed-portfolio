@@ -776,3 +776,53 @@ h2 {
 	}
 	
 }
+
+/* PROJECTS PAGE RESPONSIVENESS */
+@media only screen and (max-width: 1200px) {
+	.personal_project {
+		border: rgba(71,26,96,1.00) 0.5vw solid;
+		
+		border-radius: 1.3vw;
+		
+		
+		margin-top: 2vw;
+		
+		width: 90%;
+	}
+	
+	
+	.proj_name {
+		font-size: 4vw;
+	}
+	.personal_proj_image {
+		width: 30%;
+		object-fit: scale-down;
+		border-radius: 1vw;
+		margin: 1vw;
+	}
+	
+	.proj_desription_block {
+		font-size: 2vw;
+		width: 65%;
+		height: 85%;
+	}
+	
+	.title {
+		padding: 5vw 0;
+		font-size: 5vw;
+	}
+
+	@keyframes typingE {
+		from {width: 0;  opacity: 100%;}
+		to { width: 65%; opacity: 100%;}
+	}
+
+	.school_proj {
+		font-size: 4vw;
+	}
+	
+	#mentions {
+		font-size: 1.5vw;
+	}
+	
+}
