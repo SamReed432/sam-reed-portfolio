@@ -29,6 +29,10 @@ nav a {
 	color: black;
 }
 
+nav a:hover {
+	background-color: gray;
+}
+
 #main_content {
 	display: flex;
 	align-content: center;
@@ -130,6 +134,8 @@ nav a {
 	animation-delay: 3s;
 	opacity: 0%;
 	animation-fill-mode: forwards;
+
+	padding-top: 1rem;
 }
 
 @keyframes slide_in_left {
@@ -151,13 +157,32 @@ nav a {
 	width: 50%;
 	display: flex;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
 	animation: slide_in_right 2s;
 	animation-delay: 3s;
 	opacity: 0%;
 	animation-fill-mode: forwards;
 	margin: 0;
 	align-content: space-around;
+}
+
+#projects_block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#resume_block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#about_block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .home_block {
@@ -241,7 +266,6 @@ footer {
 	padding-left: 1vw;
 	padding-right: 1vw;
 	color: black;
-	color: black;
 	
 	margin: 3vw;
 	margin-left: 6vw;
@@ -252,6 +276,11 @@ footer {
 	justify-content: space-around;
 	
 	opacity: 0%;
+
+	font-family: "Baloo Paaji 2", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
 	
 	
 	animation: slide_in_bottom 2s;
@@ -427,7 +456,10 @@ h2 {
 }
 
 .personal_proj_description {
-	font-family: 'Share Tech Mono', monospace;
+	font-family: "Baloo Paaji 2", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
 }
 
 .personal_proj_image {
@@ -634,12 +666,15 @@ h2 {
 		align-items: center;
 		width: 100%;
 		padding: 0;
+		margin: 0;
 	}
 	#main_content_left {
-		width: 80%;
+		width: 90%;
+		padding: 10vw 0;
 	}
 	#main_content_right {
-		width: 80%;
+		width: 100%;
+		justify-content: space-around;
 	}
 	#main_content_left_top {
 	font-size: 6vw;
@@ -651,7 +686,7 @@ h2 {
 		font-size: 5vw;
 	}
 	.home_block img {
-		width: 20vw;
+		width: 10vw;
 	}
 	header {
 		font-size: 4vw;
@@ -660,10 +695,22 @@ h2 {
 		font-size: 4vw;
 	}
 	.proj_name {
-		font-size: 3vw;
+		font-size: 3.5vw;
 	}
 	.personal_proj_description {
 		font-size: 2.5vw;
+		display: -webkit-box;
+		-webkit-line-clamp: 3; /* Number of lines before truncating */
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	footer {
+		height: 7vw;
+	}
+
+	.footer_img {
+		width: 6vw;
 	}
 }
 
