@@ -826,3 +826,105 @@ h2 {
 	}
 	
 }
+
+
+/* Individual Project Page Responsiveness */
+@media only screen and (max-width: 1200px) {
+	.proj_block {
+		width: 100%;
+		flex-direction: row;
+		margin: 10vw 0;
+	}
+	
+	.attributes_block {
+
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-wrap: pretty;
+		
+	}
+
+	.proj_title_block {
+		width: 60%;
+		display: block;
+		overflow: wrap;
+
+		padding-left: 5vw;
+	}
+	
+	.attributes_block li {
+		
+		border: solid white 0.5vw;
+		border-radius: 3vw;
+	
+		font-size: 3vw;
+		padding: 2vw;
+
+		margin-bottom: 5vw;
+	}
+	
+	#title_li {
+		width: 100%;
+		font-size: 3vw;
+	}
+	
+	h1 {
+		font-size: 5vw;
+		border-right: .10em solid transparent;
+		white-space: wrap;
+		text-wrap: pretty;
+		overflow: auto;
+		margin: 0;
+		letter-spacing: .10em;
+		text-align: left;
+		animation: none;
+	}
+	
+	h2 {
+		font-size: 3vw;
+		border-right: .10em solid transparent;
+		white-space: wrap;
+		width: 100%;
+		overflow: wrap;
+		opacity: 100;
+		margin: 0;
+		letter-spacing: .10em;
+		text-align: left;
+		animation: none;
+	}
+	
+	#school_date{
+		width: 100%;
+		animation: none;
+	}
+	
+	.main_img {
+		width: 40vw;;
+		height: auto;
+
+		padding-right: 3vw;
+	}
+	
+	.proj_description_title {
+		
+		font-size: 3vw;
+	}
+	
+	.proj_description {
+		margin: 3vw;
+		margin-top: 1vw;
+		font-size: 3vw;
+		text-indent: 2.5vw;
+		border: rgba(138,43,226,1.00) medium solid;
+		padding: 2vw;
+		border-radius: 2vw;
+	}
+
+	#mentions {
+		margin-bottom: 5vw;
+	
+		font-size: 4vw;
+		
+	}
+	
+}
