@@ -716,7 +716,63 @@ h2 {
 
 /************ABOUT PAGE RESPONSIVENESS****************/
 @media only screen and (max-width: 1200px) {
-	#about_right {
-		display: none;
+
+	.about_attributes_block {
+		height: 5%;
+	
+		margin-top: -1vw;
 	}
+	
+	.about_attributes_block li {
+		
+		font-size: 3vw;
+
+	}
+	
+	#about_main {
+		margin: 0;
+		height: 80%;
+		width: 100%;
+
+		flex-direction: column;
+	}
+
+	#about_left {
+		width: 90%;
+	}
+	
+	.list_title {
+		font-size: 5vw;
+	}
+	
+	#about_name {
+		font-size: 6vw;
+	}
+	
+	#about_description {
+		font-size:3.5vw;
+	}
+	
+	#person_of_the_week, #download_div {
+		margin: 3vw;
+	}
+	
+	#person_of_the_week img {
+		width: 7vw;
+	}
+	
+	#person_of_the_week a {
+		font-size: 3vw;
+	}
+	
+	#about_contant {
+		font-size: 3vw;
+
+	}
+	
+	.contact_larger {
+		font-size: 4vw;
+
+	}
+	
 }
