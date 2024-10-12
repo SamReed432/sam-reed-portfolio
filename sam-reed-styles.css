@@ -139,18 +139,18 @@ nav a:hover {
 }
 
 @keyframes slide_in_left {
-	from {opacity: 0%; margin-left: -2vw;}
-	to {opacity: 100%}
+	from {opacity: 0%; transform: translateX(-4vw);}
+	to {opacity: 100%; transform: translateX(0);}
 }
 
 @keyframes slide_in_right {
-	from {opacity: 0%; margin-right: -3vw; margin-left: 3vw}
-	to {opacity: 100%}
+	from {opacity: 0%; transform: translateX(4vw);}
+	to {opacity: 100%; transform: translateX(0);}
 }
 
 @keyframes slide_in_bottom {
-	from {opacity: 0%; margin-top: 5vw;}
-	to {opacity: 100%}
+	from {opacity: 0%; transform: translateY(-4vw);}
+	to {opacity: 100%; transform: translateY(0);}
 }
 
 #main_content_right {
@@ -664,7 +664,6 @@ h2 {
 		align-content: center;
 		justify-content: center;
 		align-items: center;
-		width: 100%;
 		padding: 0;
 		margin: 0;
 	}
@@ -711,6 +710,21 @@ h2 {
 
 	.footer_img {
 		width: 6vw;
+	}
+
+	@keyframes slide_in_left {
+		from {opacity: 0%; transform: translateX(-20vw);}
+		to {opacity: 100%; transform: translateX(0);}
+	}
+	
+	@keyframes slide_in_right {
+		from {opacity: 0%; transform: translateX(20vw);}
+		to {opacity: 100%; transform: translateX(0);}
+	}
+	
+	@keyframes slide_in_bottom {
+		from {opacity: 0%; transform: translateY(-20vw);}
+		to {opacity: 100%; transform: translateY(0);}
 	}
 }
 
