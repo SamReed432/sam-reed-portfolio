@@ -1,0 +1,6291 @@
+/*--------------------------------------------*\
+	File Name: zipStyle.css
+	Created by: Laura Robida
+	For: Zip06.com/Shore Publishing, LLC
+	Environment: Production, Compressed 
+	Last updated: April 19, 2023
+/*--------------------------------------------*/
+/*--------------------------------------------*\
+	File Name: _variables.scss
+	Created by: Laura Robida
+	For: Zip06.com/Shore Publishing, LLC
+	Environment: Development, Expanded
+	Last updated: January 13, 2020
+/*--------------------------------------------*/
+/*--------------------------------------------*\
+	File Name: _mixins.scss
+	Created by: Laura Robida
+	For: Zip06.com/Shore Publishing, LLC
+	Environment: Development, Expanded
+	Last updated: January 13, 2020
+/*--------------------------------------------*/
+/* -- Breakpoints -- */
+/* -- Mixins -- */
+/*--------------------------------------------*\
+	File Name: _fonts.scss
+	Created by: Laura Robida
+	For: Zip06.com/Shore Publishing, LLC
+	Environment: Development, Expanded
+	Last updated: May 7, 2021
+/*--------------------------------------------*/
+@font-face {
+  font-family: 'monte';
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Montserrat/Montserrat-Regular.eot#iefix") format("embedded-opentype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Montserrat/Montserrat-Regular.wof") format("application/x-font-woff"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Montserrat/Montserrat-Regular.svg#monte") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oldstandard';
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Standard/OldStandard-Regular-webfont.eot");
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Standard/OldStandard-Regular-webfont.eot#iefix") format("embedded-opentype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Standard/OldStandard-Regular-webfont.woff") format("application/x-font-woff"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Standard/OldStandard-Regular.ttf") format("truetype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Standard/OldStandard-Regular-webfont.svg#Old Standard TT") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oldstandard';
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Standard/oldstandard-bold-webfont.eot");
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Standard/oldstandard-bold-webfont.eot#iefix") format("embedded-opentype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Standard/oldstandard-bold-webfont.woff") format("application/x-font-woff"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Standard/OldStandard-Bold.ttf") format("truetype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Standard/oldstandard-bold-webfont.svg#Old Standard Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oswald';
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Oswald/oswald-oegular-webfont.eot");
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Oswald/oswald-regular-webfont.eot#iefix") format("embedded-opentype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Oswald/oswald-regular-webfont.wof") format("application/x-font-woff"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Oswald/Oswald-Regular.ttf") format("truetype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/Oswald/oswald-regular-webfont.svg#Oswald") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sans';
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/sourcesans/SourceSansPro-Regular.eot");
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/sourcesans/SourceSansPro-Regular.eot#iefix") format("embedded-opentype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/sourcesans/SourceSansPro-Regular.woff") format("application/x-font-woff"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/sourcesans/SourceSansPro-Regular.ttf") format("truetype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/sourcesans/SourceSansPro-Regular.svg#sans") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sans';
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/sourcesans/SourceSansPro-Italic.eot");
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/sourcesans/SourceSansPro-Italic.eot#iefix") format("embedded-opentype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/sourcesans/SourceSansPro-Italic.woff") format("application/x-font-woff"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/sourcesans/SourceSansPro-Italic.ttf") format("truetype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/sourcesans/SourceSansPro-Italic.svg#sansitalic") format("svg");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'sans';
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/sourcesans/SourceSansPro-Bold.eot");
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/sourcesans/SourceSansPro-Bold.eot#iefix") format("embedded-opentype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/sourcesans/SourceSansPro-Bold.woff") format("application/x-font-woff"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/sourcesans/SourceSansPro-Bold.ttf") format("truetype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/sourcesans/SourceSansPro-Bold.svg#sansbold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/ubuntu/Ubuntu-Medium.eot");
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/ubuntu/Ubuntu-Medium.eot#iefix") format("embedded-opentype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/ubuntu/Ubuntu-Medium.woff") format("application/x-font-woff"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/ubuntu/Ubuntu-Medium.ttf") format("truetype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/ubuntu/Ubuntu-Medium.svg#ubuntu") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AG';
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/AG/AGB.eot");
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/AG/AGB.eot#iefix") format("embedded-opentype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/AG/AGB.woff") format("application/x-font-woff"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/AG/AGB.ttf") format("truetype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/AG/AGB.svg#sans") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AG';
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/AG/AGCW.eot");
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/AG/AGCW.eot#iefix") format("embedded-opentype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/AG/AGCW.woff") format("application/x-font-woff"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/AG/AGCW.ttf") format("truetype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/AG/AGCW.svg#sans") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'beautiful';
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/BeautifulSky/BeautifulSky.eot");
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/BeautifulSky/BeautifulSky.eot#iefix") format("embedded-opentype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/BeautifulSky/BeautifulSky.woff") format("application/x-font-woff"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/BeautifulSky/BeautifulSky.ttf") format("truetype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/BeautifulSky/BeautifulSky.svg#bloomy") format("svg");
+}
+
+/*-- Sans Serif Fonts--*/
+/*-- Serif Fonts--*/
+/*--------------------------------------------*\
+	File Name: _icons.scss
+	Created by: Laura Robida
+	For: Zip06.com/Shore Publishing, LLC
+	Environment: Development, Expanded
+	Last updated: June 15, 2021
+/*--------------------------------------------*/
+@font-face {
+  font-family: 'awesome';
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/awesome/fa-regular-400.eot");
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/awesome/fa-regular-400.eot#iefix") format("embedded-opentype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/awesome/fa-regular-400.woff") format("application/x-font-woff"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/awesome/fa-regular-400.ttf") format("truetype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/awesome/fa-regular-400.svg#awesome") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'awesomeSolid';
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/awesome/fa-solid-900.eot");
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/awesome/fa-solid-900.eot#iefix") format("embedded-opentype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/awesome/fa-solid-900.woff") format("application/x-font-woff"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/awesome/fa-solid-900.ttf") format("truetype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/awesome/fa-solid-900.svg#awesome") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'awesomeBrands';
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/awesome/fa-brands-400.eot");
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/awesome/fa-brands-400.eot#iefix") format("embedded-opentype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/awesome/fa-brands-400.woff") format("application/x-font-woff"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/awesome/fa-brands-400.ttf") format("truetype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/awesome/fa-brands-400.svg#awesome") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* line 44, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-alert,
+.fa-arrow-left,
+.fa-calendar,
+.fa-camera,
+.fa-circle,
+.fa-close,
+.fa-delete,
+.fa-edit,
+.fa-envelope,
+.fa-facebook,
+.fa-facebook-round .fa-file,
+.fa-flag,
+.fa-grad,
+.fa-hamburger,
+.fa-instagram,
+.fa-insta-round,
+.fa-link,
+.fa-linkedin,
+.fa-pinterest,
+.fa-phone,
+.fa-play,
+.fa-plus,
+.fa-print,
+.fa-rss,
+.fa-rss-page,
+.fa-settings,
+.fa-signout,
+.fa-square,
+.fa-twitter .fa-twitter-round,
+.fa-verified,
+.fa-video,
+.fa-youtube {
+  display: inline-block;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialised;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 85, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-alert,
+.fa-arrow-left,
+.fa-calendar,
+.fa-camera,
+.fa-circle,
+.fa-close,
+.fa-delete,
+.fa-edit,
+.fa-envelope,
+.fa-file,
+.fa-flag,
+.fa-grad,
+.fa-hamburger,
+.fa-link,
+.fa-phone,
+.fa-play,
+.fa-plus,
+.fa-print,
+.fa-rss,
+.fa-rss-page,
+.fa-settings,
+.fa-signout,
+.fa-square,
+.fa-verified,
+.fa-video {
+  font: normal normal normal 14px/1 'awesomeSolid';
+}
+
+/* line 113, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-facebook,
+.fa-facebook-round,
+.fa-instagram,
+.fa-insta-round,
+.fa-linkedin,
+.fa-pinterest,
+.fa-twitter,
+.fa-twitter-round,
+.fa-youtube {
+  font: normal normal normal 14px/1 'awesomeBrands';
+}
+
+/* line 125, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-alert:before {
+  content: '\f071';
+}
+
+/* line 129, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-arrow-left:before {
+  content: '\f060';
+}
+
+/* line 133, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-calendar:before {
+  content: '\f073';
+}
+
+/* line 137, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-camera:before {
+  content: '\f030';
+  margin: 0px 10px;
+}
+
+/* line 142, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-circle:before {
+  content: '\f111';
+}
+
+/* line 146, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-close:before {
+  content: '\f057';
+}
+
+/* line 150, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-delete:before {
+  content: '\f2ed';
+}
+
+/* line 154, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-edit:before {
+  content: '\f044';
+}
+
+/* line 158, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-envelope:before {
+  content: '\f0e0';
+}
+
+/* line 162, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-facebook:before,
+.fa-facebook-round:before {
+  content: '\f082';
+}
+
+/* line 167, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-facebook-round:before {
+  color: #fdfdfd;
+}
+
+/* line 171, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-file:before {
+  content: '\f15b';
+}
+
+/* line 175, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-flag:before {
+  content: '\f024';
+  color: #c21807;
+}
+
+/* line 180, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-hamburger:before {
+  content: '\f0c9';
+}
+
+/* line 184, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-grad {
+  display: block;
+  font-size: 2.5rem;
+}
+
+/* line 188, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-grad:before {
+  content: '\f19d';
+  color: #060606;
+  -webkit-text-shadow: 0 0 1px #757575;
+  -moz-text-shadow: 0 0 1px #757575;
+  text-shadow: 0 0 1px #757575;
+}
+
+/* line 195, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-instagram:before,
+.fa-insta-round:before {
+  content: '\f16d';
+}
+
+/* line 200, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-insta-round:before {
+  color: #fdfdfd;
+}
+
+/* line 204, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-lg:before {
+  font-size: 1.333rem;
+  vertical-align: -15%;
+}
+
+/* line 209, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-link:before {
+  content: '\f0c1';
+}
+
+/* line 213, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-linkedin:before {
+  content: '\f0e1';
+}
+
+/* line 217, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-phone:before {
+  content: '\f095';
+}
+
+/* line 221, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-pinterest:before {
+  content: '\f231';
+}
+
+/* line 225, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-play:before {
+  content: '\f04b';
+  color: #7b2952;
+  margin-right: 5px;
+}
+
+/* line 231, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-plus:before {
+  content: '\f067';
+}
+
+/* line 235, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-print:before {
+  content: '\f02f';
+}
+
+/* line 239, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-rss:before,
+.fa-rss-page:before {
+  content: '\f09e';
+}
+
+/* line 244, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-rss-page:before {
+  color: #ff6600;
+  margin-left: 5px;
+}
+
+/* line 249, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-settings {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* line 254, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-settings:before {
+  content: '\f1de';
+  font-size: 2rem;
+}
+
+/* line 258, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-settings:after {
+  content: 'Filter';
+  display: block;
+  font-family: "monte", "sans", Arial, sans-serif;
+  font-size: .75rem;
+}
+
+/* line 266, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-signout {
+  conntet: '\f2f5';
+}
+
+/* line 270, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-stack {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+/* line 280, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-stack-1x,
+.fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 288, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+/* line 293, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+/* line 297, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-square:before {
+  content: '\f0c8';
+}
+
+/* line 301, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-twitter:before,
+.fa-twitter-round:before {
+  content: '\f099';
+}
+
+/* line 306, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-twitter-round:before {
+  color: #fdfdfd;
+}
+
+/* line 310, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-verified:before {
+  content: '\f00c';
+  color: #336699;
+  margin-left: 5px;
+  font-size: .75rem;
+}
+
+/* line 317, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-video:before {
+  content: '\f03d';
+}
+
+/* line 321, E:/2020 Refresh Sass - DEV/helpers/_icons.scss */
+.fa-youtube:before {
+  content: '\f167';
+}
+
+@font-face {
+  font-family: 'slick';
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/slick/slick.eot");
+  src: url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/slick/slick.eot#iefix") format("embedded-opentype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/slick/slick.woff") format("application/x-font-woff"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/slick/slick.ttf") format("truetype"), url("/web/20240426180428im_/https://www.zip06.com/wp-content/themes/zip/assets/fonts/slick/slick.svg#slick") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* - Style Resets & Universals- */
+/* line 16, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 21, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* line 26, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+a {
+  background-color: transparent;
+}
+
+/* line 30, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background: #fdfdfd;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.5em;
+  color: #060606;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 41, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+button {
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearnce: none;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  line-height: 1;
+  cursor: auto;
+}
+
+/* line 51, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* line 58, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* line 66, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+button,
+[type="reset"],
+[type="submit"],
+optgroup,
+select,
+textarea {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* line 81, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+button,
+input {
+  overflow: visible;
+}
+
+/* line 86, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 91, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+button::-moz-focus-inner,
+[type="button"]:-moz-focus-inner,
+[type="reset"]:-moz-focus-inner,
+[type="submit"]:-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* line 99, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusing,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/* line 106, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+details {
+  display: block;
+}
+
+/* line 110, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+div,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 130, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+/* line 136, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/* line 140, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 145, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 149, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 153, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/* line 160, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+img {
+  border-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 169, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+input[readonly] {
+  background: #fdfdfd;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: .5rem;
+  margin: 0 0 1rem 0;
+}
+
+/* line 177, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+legend {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/* line 186, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+p {
+  margin-bottom: 10px;
+  font-size: inherit;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 193, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+  overflow: auto;
+}
+
+/* line 199, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0;
+}
+
+/* line 205, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+summary {
+  display: list-item;
+}
+
+/* line 209, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+strong,
+b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+/* line 215, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+template {
+  display: none;
+}
+
+/* line 219, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+textarea {
+  overflow: auto;
+  height: auto;
+  min-height: 50px;
+  border-radius: 0;
+  cursor: default;
+}
+
+/* line 227, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 232, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 237, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-appearnce: textfield;
+  appearance: textfield;
+  outline-offset: -2px;
+}
+
+/* line 242, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  -moz-appearnce: none;
+  appearance: none;
+}
+
+/* line 246, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  -moz-appearnce: button;
+  appearance: button;
+  font: inherit;
+}
+
+/* - Base Font Styling - */
+/* line 253, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+a {
+  line-height: inherit;
+  color: #060606;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 260, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+a:hover,
+a:focus {
+  color: #131313;
+}
+
+/* line 265, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+a img {
+  border: 0;
+}
+
+/* line 269, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+a:link,
+a:visited {
+  color: #131313;
+}
+
+/* line 274, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "oswald", "sans", Arial, sans-serif;
+  font-weight: inherit;
+}
+
+/* line 284, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+h1.standard,
+h2.standard,
+h3.standard,
+h4.standard,
+h5.standard,
+h6.standard {
+  font-family: "oldstandard", "Times New Roman", serif;
+}
+
+/* line 291, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+h1 {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 291, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* line 298, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+h2 {
+  font-size: 1.25rem;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 298, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* line 305, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+h3 {
+  font-size: 1.1875rem;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 305, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  h3 {
+    font-size: 1.9375rem;
+  }
+}
+
+/* line 312, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+h4 {
+  font-size: 1.125rem;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 312, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  h4 {
+    font-size: 1.5625rem;
+  }
+}
+
+/* line 319, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+h5 {
+  font-size: 1.0625rem;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 319, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  h5 {
+    font-size: 1.25rem;
+  }
+}
+
+/* line 326, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+h6 {
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 326, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  h6 {
+    font-size: 1rem;
+  }
+}
+
+/* - List Styles - */
+/* line 334, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+dl,
+ol,
+ul {
+  margin-left: 1.25rem;
+  margin-bottom: 10px;
+  list-style-position: outside;
+  line-height: 1.6;
+}
+
+/* line 343, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+dl {
+  margin-bottom: 10px;
+}
+
+/* line 347, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+dl dt {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+/* line 352, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+/* line 360, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+p {
+  font-size: 1.125rem;
+}
+
+/* line 364, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+ul {
+  list-style-type: square;
+}
+
+/* - Utility & Grid Add-ons - */
+/* line 371, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.advertisement {
+  font-size: .75rem;
+  font-family: "sans", Arial, sans-serif;
+  color: #060606;
+  margin: 10px 0 0 10px;
+}
+
+/* line 378, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.artfulDodger {
+  display: block;
+  height: 1rem;
+}
+
+/* line 383, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.blue-link {
+  color: #336699 !important;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 388, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.bottom-border {
+  border-bottom: 1px solid #666;
+  margin-bottom: 10px;
+}
+
+/* line 393, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem;
+  padding: .85em 1em;
+  border: 1px solid transparent;
+  transition: background-color .25s ease-out, color .25s ease-out;
+  font-size: .9rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background: #336699;
+  color: #fdfdfd;
+}
+
+/* line 407, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.button.full {
+  width: 100%;
+}
+
+/* line 412, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.center {
+  text-align: center;
+}
+
+/* line 416, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.centerall, .mediakit-inside p.centerall {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+/* line 420, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.centerit {
+  justify-self: center;
+}
+
+/* line 424, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.hide {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 428, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .hide-for-large {
+    display: none !important;
+  }
+}
+
+/* line 434, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.infinite-loader {
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+/* line 440, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.instruction {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #060606;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* line 448, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 452, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.left-border {
+  border-left: 1px solid #666;
+}
+
+/* line 456, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.marginalized {
+  margin: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 460, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .not-large {
+    display: none;
+  }
+}
+
+/* line 466, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.pad-it {
+  padding: 10px;
+}
+
+/* line 470, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.required {
+  color: #ff0000;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 475, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.right-border {
+  border-right: 1px solid #666;
+}
+
+/* line 479, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.rightinsetwrap {
+  float: right;
+  clear: right;
+  margin-left: 10px;
+}
+
+/* line 485, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.show {
+  visbility: visible;
+}
+
+@media only screen and (max-width: 1023px) {
+  /* line 489, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .show-for-large {
+    display: none !important;
+  }
+}
+
+/* line 495, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-border {
+  border-top: 1px solid #666;
+  padding-top: 10px;
+}
+
+/* line 500, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.valign {
+  align-self: center;
+}
+
+/* - Ads - */
+/* line 505, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.leader {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+/* - OffCanvas Slider & Navigation - */
+/* line 512, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main {
+  /* Nav Container - off convas slider*/
+  transition: left .25s ease-in-out;
+  background: #fdfdfd;
+  position: fixed;
+  overflow-x: hidden;
+  width: 17.5em;
+  left: -17.5em;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+/* line 523, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.open .nav-main {
+  box-shadow: 0 0 10px rgba(10, 10, 10, 0.7);
+}
+
+/* line 527, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 531, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul.vertical-menu {
+  transition: right .25s ease-in-out;
+  position: relative;
+  right: 0;
+}
+
+/* line 536, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul.vertical-menu.is-active {
+  right: -17.5em;
+}
+
+/* line 540, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul.vertical-menu li {
+  list-style-type: none;
+}
+
+/* line 543, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul.vertical-menu li.label {
+  padding: 0;
+  background: #060606;
+  color: #fdfdfd;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25rem;
+  text-shadow: 0 0 6px #757575;
+}
+
+/* line 547, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul.vertical-menu li.label .fa-close {
+  float: right;
+}
+
+/* line 553, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul.vertical-menu li:not(label) a {
+  padding: 10px 20px;
+}
+
+/* line 558, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul.vertical-menu li a {
+  display: block;
+  border-bottom: 1px solid #666;
+  text-decoration: none;
+  color: #060606;
+  font-size: 1rem;
+  font-family: "sans", Arial, sans-serif;
+  cursor: pointer;
+}
+
+/* line 567, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul.vertical-menu li a:hover {
+  color: #757575;
+}
+
+/* line 574, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul .vertical-menu.is-active {
+  visibility: hidden;
+}
+
+/* line 578, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul .submenu-parent > a:not(.back):after,
+.nav-main ul .nested-parent > a:not(.back):after {
+  text-align: right;
+  display: inline-block;
+  font: normal normal normal 14px/1 'awesomeSolid';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f054';
+  float: right;
+  padding-top: 3px;
+  color: #060606;
+}
+
+/* line 588, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul .submenu {
+  visibility: hidden;
+  display: none;
+  width: 17.5em;
+}
+
+/* line 594, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul .submenu.is-active {
+  transition: right .25s ease-in-out;
+  position: absolute;
+  left: -17.5em;
+  top: 0;
+  right: 0;
+  display: block;
+  visibility: visible;
+}
+
+/* line 603, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul .submenu.is-active.nested-active {
+  transition: right .25s ease-in-out;
+  visibility: hidden;
+  right: -17.5em;
+}
+
+/* line 610, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul .submenu li {
+  list-style-type: none;
+}
+
+/* line 613, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul .submenu li.label-back {
+  text-align: left;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: 0 0 0 10px;
+  background: #060606;
+  border-bottom: none;
+  color: #fdfdfd;
+  width: 17.5em;
+}
+
+/* line 147, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+.nav-main ul .submenu li.label-back a {
+  color: #fdfdfd;
+  text-decoration: none;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+  display: block;
+}
+
+/* line 155, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+.nav-main ul .submenu li.label-back a.back:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'awesomeSolid';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f060';
+  margin-right: 10px;
+}
+
+/* line 166, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+.nav-main ul .submenu li.label-back a.back:after {
+  content: 'Back';
+}
+
+/* line 617, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul .submenu li a {
+  border-bottom: 1px solid #666;
+}
+
+/* line 621, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul .submenu li .nested-submenu {
+  visibility: hidden;
+  display: none;
+}
+
+/* line 625, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul .submenu li .nested-submenu.is-active {
+  transition: right .25s ease-in-out;
+  position: absolute;
+  left: 0em;
+  top: 0;
+  right: 0;
+  display: block;
+  visibility: visible;
+}
+
+/* line 635, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul .submenu li .nested-submenu li {
+  list-style-type: none;
+}
+
+/* line 638, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul .submenu li .nested-submenu li.label-back {
+  text-align: left;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: 0 0 0 10px;
+  background: #060606;
+  border-bottom: none;
+  color: #fdfdfd;
+  width: 17.5em;
+}
+
+/* line 147, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+.nav-main ul .submenu li .nested-submenu li.label-back a {
+  color: #fdfdfd;
+  text-decoration: none;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+  display: block;
+}
+
+/* line 155, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+.nav-main ul .submenu li .nested-submenu li.label-back a.back:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'awesomeSolid';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f060';
+  margin-right: 10px;
+}
+
+/* line 166, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+.nav-main ul .submenu li .nested-submenu li.label-back a.back:after {
+  content: 'Back';
+}
+
+/* line 642, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nav-main ul .submenu li .nested-submenu li a {
+  border-bottom: 1px solid #666;
+}
+
+/* line 652, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.open .nav-main {
+  /* Opens Primary menu */
+  left: 0;
+}
+
+/* line 657, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.overlay {
+  /* Wraps the body of the site */
+}
+
+/* line 658, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.overlay.open {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  transition: opacity .5s ease, visibility .5s ease;
+  z-index: 2;
+  position: fixed;
+}
+
+/* - Top Bar - */
+/* line 672, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar {
+  background: #060606;
+  padding: 10px 15px;
+  margin: 0 0 10px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  -webkit-box-shadow: 0 0 6px #757575;
+  -moz-box-shadow: 0 0 6px #757575;
+  box-shadow: 0 0 6px #757575;
+  /* - For the MediaKit Nav - */
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 672, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .top-bar {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+/* line 687, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar.inverse {
+  background: #fdfdfd;
+  color: #060606;
+}
+
+/* line 692, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .left {
+  left: 0;
+  grid-column: 1 / 1;
+  align-self: center;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 692, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .top-bar .left {
+    grid-column: 1 / 2;
+  }
+}
+
+/* line 702, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .left .fa-hamburger {
+  cursor: pointer;
+  font-size: 1.65rem;
+  color: #fdfdfd;
+}
+
+/* line 707, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .left .fa-hamburger.inverse {
+  color: #060606;
+}
+
+/* line 711, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .left .fa-hamburger.navTrigger::after {
+  content: 'MENU';
+  display: block;
+  font-size: .6rem;
+  font-family: "monte", "sans", Arial, sans-serif;
+  margin-left: -4px;
+  margin-top: 5px;
+}
+
+/* line 722, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .logo {
+  grid-column: span 2;
+  align-self: center;
+  justify-self: left;
+}
+
+/* line 727, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .logo h1.siteLogo {
+  display: inline-block;
+  margin-bottom: -5px;
+}
+
+/* line 731, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .logo h1.siteLogo .z6logoBlack,
+.top-bar .logo h1.siteLogo .z6logoWhite {
+  display: inline-block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  height: 40px;
+  width: 100px;
+  background-size: 100px;
+}
+
+/* line 743, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .logo h1.siteLogo .z6logoWhite {
+  background: url("http://web.archive.org/web/20240426180428im_/https://static.zip06.com/zip06/assets/images/logos/zip06-white-2019-100-40.png") no-repeat;
+}
+
+/* line 748, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .logo h1.siteLogo .z6logoBlack {
+  background: url("http://web.archive.org/web/20240426180428im_/https://static.zip06.com/zip06/assets/images/logos/zip06-black-2019-100-40.png") no-repeat;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 722, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .top-bar .logo {
+    grid-column: 2 / 4;
+  }
+}
+
+/* line 758, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .middle {
+  align-self: end;
+  justify-self: center;
+  grid-column: span 5;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 758, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .top-bar .middle {
+    align-self: center;
+    grid-column: 5 / 12;
+  }
+}
+
+/* line 768, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .middle p {
+  font-family: "monte", "sans", Arial, sans-serif;
+  color: #fdfdfd;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-size: .8rem;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 768, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .top-bar .middle p {
+    font-size: .65rem;
+  }
+}
+
+/* line 779, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .middle p.inverse {
+  color: #060606;
+}
+
+/* line 786, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right {
+  align-self: center;
+  justify-self: right;
+  grid-column: span 4;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 786, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .top-bar .right {
+    display: none;
+    visbility: hidden;
+  }
+}
+
+/* line 796, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right .search {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fdfdfd;
+  -webkit-text-shadow: 0 0 6px #757575;
+  -moz-text-shadow: 0 0 6px #757575;
+  text-shadow: 0 0 6px #757575;
+}
+
+/* line 802, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right .search.inverse {
+  color: #060606;
+  -webkit-text-shadow: 0 0 6px #fdfdfd;
+  -moz-text-shadow: 0 0 6px #fdfdfd;
+  text-shadow: 0 0 6px #fdfdfd;
+}
+
+/* line 807, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right .search:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 'awesomeSolid';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f002';
+  font-size: 1.25rem;
+}
+
+/* line 814, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right .searchGo {
+  display: none;
+  color: #fdfdfd;
+}
+
+/* line 817, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right .searchGo.inverse {
+  color: #060606;
+}
+
+/* line 821, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right .searchGo:after {
+  content: 'Go';
+  font-family: "sans", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 830, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right form {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* line 835, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right input[type=text] {
+  border-radius: 15px;
+  visibility: hidden;
+  display: none;
+  transition: right .25s ease-in-out;
+  right: 22em;
+  padding: .15em;
+}
+
+/* line 843, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right input[type=text].searchField {
+  transition: right .25s ease-in-out;
+  position: absolute;
+  right: 22em;
+  display: block;
+  visibility: visible;
+  top: 1.6em;
+  width: auto;
+}
+
+@media only screen and (max-width: 1023px) {
+  /* line 843, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .top-bar .right input[type=text].searchField {
+    top: 1.5em;
+    right: 7.5em;
+  }
+}
+
+/* line 859, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right button.submit {
+  padding: 10px 20px;
+  background: #060606;
+  font-family: "monte", "sans", Arial, sans-serif;
+  color: #fdfdfd;
+  border-radius: 25px;
+  align-self: center;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 20px;
+  -webkit-box-shadow: 0 0 0 2px #fdfdfd;
+  -moz-box-shadow: 0 0 0 2px #fdfdfd;
+  box-shadow: 0 0 0 2px #fdfdfd;
+  font-size: .75rem;
+}
+
+/* line 872, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right button.submit.inverse {
+  color: #060606;
+  background: #fdfdfd;
+  -webkit-box-shadow: 0 0 2px #060606;
+  -moz-box-shadow: 0 0 2px #060606;
+  box-shadow: 0 0 2px #060606;
+}
+
+/* line 878, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right button.submit .fa-plus {
+  margin-right: 2px;
+  color: #fdfdfd;
+}
+
+/* line 882, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right button.submit .fa-plus.inverse {
+  color: #060606;
+}
+
+/* line 888, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right .userMenu {
+  display: inline-block;
+  margin: 5px 10px 0 10px;
+  color: #fdfdfd;
+}
+
+/* line 893, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right .userMenu.inverse {
+  color: #060606;
+}
+
+/* line 897, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .right .userMenu:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'awesomeSolid';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f007';
+  font-size: 1.65rem;
+}
+
+/* line 907, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar.mediakit-top {
+  margin-bottom: 0px;
+}
+
+/* line 912, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .MK-left {
+  left: 0;
+  grid-column: 1 / 7;
+  align-self: center;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 912, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .top-bar .MK-left {
+    grid-column: 1 / 4;
+  }
+}
+
+/* line 920, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .MK-left .logo {
+  grid-column: span 4;
+  align-self: center;
+  justify-self: left;
+}
+
+/* line 925, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .MK-left .logo h1.mkitLogo {
+  display: inline-block;
+  margin-bottom: -5px;
+}
+
+/* line 929, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .MK-left .logo h1.mkitLogo .z6logoBlack,
+.top-bar .MK-left .logo h1.mkitLogo .z6logoWhite {
+  display: inline-block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  height: 55px;
+  width: 300px;
+  background-size: 100px;
+}
+
+/* line 941, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .MK-left .logo h1.mkitLogo .z6logoWhite {
+  background: url("http://web.archive.org/web/20240426180428im_/https://static.zip06.com/zip06/assets/images/logos/adkitlogo-white-2020-new1.png") no-repeat;
+}
+
+/* line 945, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .MK-left .logo h1.mkitLogo .z6logoBlack {
+  background: url("http://web.archive.org/web/20240426180428im_/https://static.zip06.com/zip06/assets/images/logos/adkitlogo-black-2020-new1.png") no-repeat;
+}
+
+/* line 953, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .MK-right {
+  align-self: center;
+  justify-self: right;
+  grid-column: 7 / 12;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 953, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .top-bar .MK-right {
+    grid-column: 4 / 8;
+  }
+}
+
+/* line 961, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .MK-right.inverse {
+  color: #060606;
+}
+
+/* line 964, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .MK-right.inverse a,
+.top-bar .MK-right.inverse a:link,
+.top-bar .MK-right.inverse a:visited {
+  color: #060606;
+}
+
+/* line 971, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .MK-right a,
+.top-bar .MK-right a:link,
+.top-bar .MK-right a:visited {
+  font-family: "ubuntu", "Arial Black", sans-serif;
+  color: #fdfdfd;
+  font-size: 1.25rem;
+  line-height: 1.35rem;
+  margin-right: 15px;
+}
+
+/* line 980, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .MK-right a:hover,
+.top-bar .MK-right a:link:hover,
+.top-bar .MK-right a:visited:hover {
+  color: #0496d6;
+}
+
+/* line 983, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .MK-right a.button,
+.top-bar .MK-right a:link.button,
+.top-bar .MK-right a:visited.button {
+  background: #0496d6;
+  color: #fdfdfd;
+}
+
+/* line 987, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.top-bar .MK-right a.button:hover,
+.top-bar .MK-right a:link.button:hover,
+.top-bar .MK-right a:visited.button:hover {
+  color: #fdfdfd;
+}
+
+/* line 996, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.userSection {
+  display: inline-block;
+  font-family: "monte", "sans", Arial, sans-serif;
+  color: #fdfdfd;
+  vertical-align: middle;
+}
+
+/* line 1002, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.userSection p {
+  display: block;
+  font-size: .6rem;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+/* line 1009, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.userSection .signOut {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* line 1013, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.userSection .signOut:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'awesomeSolid';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f2f5';
+  font-size: 1.65rem;
+}
+
+/* line 1019, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.userSection .signOut.inverse {
+  color: #060606;
+}
+
+/* - Footer - */
+/* line 1027, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.footer {
+  background: #060606;
+  color: #fdfdfd;
+  font-family: "sans", Arial, sans-serif;
+  padding: 20px;
+}
+
+/* line 1033, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.footer .quicklinks {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr 4fr;
+  grid-gap: 20px;
+  border-bottom: 1px solid #fdfdfd;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1033, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .footer .quicklinks {
+    grid-template-columns: 4fr;
+    border-bottom: none;
+  }
+}
+
+/* line 1043, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.footer .quicklinks a {
+  color: #fdfdfd;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: block;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1043, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .footer .quicklinks a {
+    display: none;
+  }
+}
+
+/* line 1055, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.footer .quicklinks p {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.125rem;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1055, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .footer .quicklinks p {
+    cursor: pointer;
+    display: block;
+    border-bottom: 1px solid #fdfdfd;
+    padding-bottom: 10px;
+  }
+  /* line 1068, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .footer .quicklinks p:after {
+    display: inline-block;
+    font: normal normal normal 14px/1 'awesomeSolid';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\f078';
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    color: #fdfdfd;
+    font-size: .75rem;
+  }
+}
+
+/* line 1080, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.footer .quicklinks i {
+  margin: 0 10px;
+  font-size: 1.25rem;
+}
+
+/* line 1084, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.footer .quicklinks i:first-of-type {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* line 1091, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.footer .quicklinks .follow a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1096, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .footer .quicklinks .follow i {
+    display: none;
+  }
+}
+
+/* line 1101, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.footer .quicklinks .follow i.fa-twitter {
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1110, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .footer .quicklinks div.accordion a,
+  .footer .quicklinks div.accordion i {
+    display: block;
+    -webkit-transition: top 0.25s ease-in-out;
+    -moz-transition: top 0.25s ease-in-out;
+    -o-transition: top 0.25s ease-in-out;
+    transition: top 0.25s ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1122, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .footer .quicklinks div.follow.accordion a,
+  .footer .quicklinks div.follow.accordion i {
+    display: inline-block;
+  }
+}
+
+/* line 1128, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.footer .quicklinks div.follow i {
+  cursor: pointer;
+}
+
+/* line 1135, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.footer .copylogo {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 10px;
+}
+
+/* line 1140, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.footer .copylogo .legal {
+  grid-column: span 12;
+  justify-self: left;
+  grid-row: 1;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1140, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .footer .copylogo .legal {
+    justify-self: center;
+  }
+}
+
+/* line 1149, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.footer .copylogo .legal a {
+  color: #fdfdfd;
+  font-family: "sans", Arial, sans-serif;
+  font-size: .75rem;
+}
+
+/* line 1156, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.footer .copylogo .copyright {
+  grid-column: span 8;
+  font-family: "sans", Arial, sans-serif;
+  font-size: .75rem;
+  align-self: center;
+  grid-row: 2;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1156, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .footer .copylogo .copyright {
+    grid-column: span 12;
+    justify-self: center;
+  }
+}
+
+/* line 1169, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.footer .copylogo .logo {
+  grid-column: span 4;
+  align-self: center;
+  justify-self: right;
+  grid-row: 1 / 3;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1169, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .footer .copylogo .logo {
+    grid-column: span 12;
+    grid-row: 3;
+    justify-self: center;
+  }
+}
+
+/* - Modals - */
+/* line 1187, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modalTrigger {
+  cursor: pointer;
+}
+
+/* line 1190, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modalTrigger.blue {
+  color: #336699 !important;
+}
+
+/* line 1195, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: visibility 0s linear 0.25s, opacity 0.025s 0s, transform 0.25s;
+  -moz-transition: visibility 0s linear 0.25s, opacity 0.025s 0s, transform 0.25s;
+  -o-transition: visibility 0s linear 0.25s, opacity 0.025s 0s, transform 0.25s;
+  transition: visibility 0s linear 0.25s, opacity 0.025s 0s, transform 0.25s;
+  z-index: 10000;
+}
+
+/* line 1208, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #fdfdfd;
+  color: #060606;
+  padding: 1rem 1.5rem;
+}
+
+/* line 1217, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.small {
+  width: 24rem;
+}
+
+/* line 1221, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.medium {
+  width: 31.25rem;
+}
+
+/* line 1225, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.large {
+  width: 43.75rem;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1225, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .modal .modal-content.large {
+    width: 95%;
+    height: 95%;
+  }
+}
+
+/* line 1234, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.artModal {
+  border: 8px solid #060606;
+  color: #060606;
+  padding: 0px;
+}
+
+/* line 1239, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.artModal .close-button {
+  margin: 1rem 1.5rem;
+}
+
+/* line 1243, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.artModal .top,
+.modal .modal-content.artModal .bottom {
+  padding: 1rem 1.5rem;
+}
+
+/* line 1248, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.artModal .top {
+  background: #fdfdfd;
+  color: #060606;
+}
+
+/* line 1252, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.artModal .top p {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "sans", Arial, sans-serif;
+  font-size: 1.125rem;
+  color: #131313;
+}
+
+/* line 1261, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.artModal .top h3 {
+  text-align: center;
+  font-family: "ubuntu", "Arial Black", sans-serif;
+}
+
+/* line 1267, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.artModal .bottom {
+  background: #757575;
+  color: #fdfdfd;
+}
+
+/* line 1271, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.artModal .bottom p {
+  text-align: center;
+  font-family: "oldstandard", "Times New Roman", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
+/* line 1278, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.artModal .bottom .button {
+  margin: auto;
+  display: block;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* line 1289, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.beaconModal {
+  border: 8px solid #060606;
+  color: #060606;
+  padding: 0px;
+}
+
+/* line 1294, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.beaconModal .close-button {
+  margin: 1rem 1.5rem;
+}
+
+/* line 1298, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.beaconModal .top,
+.modal .modal-content.beaconModal .middle,
+.modal .modal-content.beaconModal .bottom {
+  padding: 1rem 1.5rem;
+}
+
+/* line 1304, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.beaconModal .top {
+  background: #fdfdfd;
+  color: #060606;
+}
+
+/* line 1308, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.beaconModal .top img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+/* line 1312, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.beaconModal .top p {
+  color: #131313;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "sans", Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+/* line 1323, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.beaconModal .middle {
+  background: #1d8ccc;
+  color: #fdfdfd;
+}
+
+/* line 1327, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.beaconModal .middle h3 {
+  text-align: center;
+  font-family: "ubuntu", "Arial Black", sans-serif;
+  color: #fdfdfd;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 1336, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.beaconModal .bottom {
+  background: #060606;
+  color: #fdfdfd;
+}
+
+/* line 1340, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .modal-content.beaconModal .bottom button {
+  margin: auto;
+  display: block;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: #d33988;
+}
+
+/* line 1354, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal.socialModal img {
+  margin: 10px;
+}
+
+/* line 1359, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal.show-modal {
+  opacity: 1;
+  visibility: visible;
+  display:block;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  -moz-transition: 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  -o-transition: 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  transition: 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+/* line 1366, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .close-button {
+  float: right;
+}
+
+/* line 1369, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.modal .close-button:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'awesomeSolid';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f057';
+}
+
+/* - Custom Grid - */
+/* line 1378, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.wrap-5,
+.wrap-8,
+.wrap-10,
+.wrap-12 {
+  display: grid;
+  grid-column-gap: 1.5rem;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1300px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 1388, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .wrap-5 .offset-1,
+  .wrap-8 .offset-1,
+  .wrap-10 .offset-1,
+  .wrap-12 .offset-1 {
+    grid-column-start: 2;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 1394, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .wrap-5 .offset-2,
+  .wrap-8 .offset-2,
+  .wrap-10 .offset-2,
+  .wrap-12 .offset-2 {
+    grid-column-start: 3;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 1400, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .wrap-5 .offset-3,
+  .wrap-8 .offset-3,
+  .wrap-10 .offset-3,
+  .wrap-12 .offset-3 {
+    grid-column-start: 4;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 1406, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .wrap-5 .offset-4,
+  .wrap-8 .offset-4,
+  .wrap-10 .offset-4,
+  .wrap-12 .offset-4 {
+    grid-column-start: 5;
+  }
+}
+
+/* line 1413, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.wrap-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* line 1417, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.wrap-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+/* line 1421, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.wrap-10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+/* line 1425, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.wrap-12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* line 1429, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.one {
+  grid-column: span 1;
+}
+
+/* line 1433, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.two {
+  grid-column: span 2;
+}
+
+/* line 1437, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.three {
+  grid-column: span 3;
+}
+
+/* line 1441, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.four {
+  grid-column: span 4;
+}
+
+/* line 1445, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.five {
+  grid-column: span 5;
+}
+
+/* line 1449, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.six {
+  grid-column: span 6;
+}
+
+/* line 1453, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.seven {
+  grid-column: span 7;
+}
+
+/* line 1457, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.eight {
+  grid-column: span 8;
+}
+
+/* line 1461, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.nine {
+  grid-column: span 9;
+}
+
+/* line 1465, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.ten {
+  grid-column: span 10;
+}
+
+/* line 1469, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.eleven {
+  grid-column: span 11;
+}
+
+/* line 1473, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.twelve {
+  grid-column: span 12;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1493, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .small-full {
+    grid-column: span 12;
+  }
+}
+
+/* - Layout - */
+/* - Essentials - */
+/* line 1504, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.squares {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 1px 1px #757575;
+  -moz-box-shadow: 1px 1px 1px #757575;
+  box-shadow: 1px 1px 1px #757575;
+  background: #fdfdfd;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 218, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .wrap-5 .squares.one, .wrap-5 .squares.three, .wrap-5
+  .fp-calendar .squares {
+    grid-column: span 5;
+  }
+  /* line 222, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .squares.one .wrap-8, .squares.three .wrap-8,
+  .fp-calendar .squares .wrap-8 {
+    grid-column: span 8;
+  }
+  /* line 226, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .squares.one .wrap-12, .squares.three .wrap-12,
+  .fp-calendar .squares .wrap-12 {
+    grid-column: span 12;
+  }
+}
+
+/* line 1518, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.squares.one h5,
+.squares.one .details, .squares.three h5,
+.squares.three .details,
+.fp-calendar .squares h5,
+.fp-calendar .squares .details {
+  margin: 0 10px;
+}
+
+/* line 1523, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.squares.one .details, .squares.three .details,
+.fp-calendar .squares .details {
+  font-family: "sans", Arial, sans-serif;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+/* line 1531, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.suddenly-seymour {
+  font-family: "sans", Arial, sans-serif;
+  text-align: right;
+  margin: 10px 10px 10px 0;
+  color: #131313;
+  text-transform: uppercase;
+  display: block;
+}
+
+/* line 1539, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.suddenly-seymour a {
+  color: inherit;
+}
+
+/* line 1543, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.suddenly-seymour:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 'awesomeSolid';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* content: '\f04d'; */
+  content: '\f101';
+  margin-left: 10px;
+}
+
+/* line 1551, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.tag {
+  grid-column: span 2;
+  background: #f2f2f2;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #060606;
+}
+
+/* line 1560, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.tag:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 'awesomeSolid';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f0da';
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+  color: #060606;
+}
+
+/* line 1569, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.tag:hover {
+  background: #e6e6e6;
+}
+
+/* - Section Fronts - */
+/* line 1576, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.topSpot {
+  grid-row: 1;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 218, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .wrap-5 .topSpot {
+    grid-column: span 5;
+  }
+  /* line 222, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .topSpot .wrap-8 {
+    grid-column: span 8;
+  }
+  /* line 226, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .topSpot .wrap-12 {
+    grid-column: span 12;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) and (orientation: portrait) {
+  /* line 218, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .wrap-5 .topSpot {
+    grid-column: span 5;
+  }
+  /* line 222, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .topSpot .wrap-8 {
+    grid-column: span 8;
+  }
+  /* line 226, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .topSpot .wrap-12 {
+    grid-column: span 12;
+  }
+}
+
+/* line 1587, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.topSpot h4 {
+  margin: 0px 10px;
+}
+
+/* line 1592, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.science-fiction {
+  grid-row: 1;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) and (orientation: portrait) {
+  /* line 1592, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .science-fiction {
+    grid-row: 2;
+  }
+  /* line 218, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .wrap-5 .science-fiction {
+    grid-column: span 5;
+  }
+  /* line 222, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .science-fiction .wrap-8 {
+    grid-column: span 8;
+  }
+  /* line 226, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .science-fiction .wrap-12 {
+    grid-column: span 12;
+  }
+}
+
+/* line 1604, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.science-fiction .double-feature {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-shadow: 1px 1px 0px #757575;
+  -moz-box-shadow: 1px 1px 0px #757575;
+  box-shadow: 1px 1px 0px #757575;
+  background: #fdfdfd;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  /* line 1604, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .science-fiction .double-feature {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1616, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .science-fiction .double-feature div {
+    grid-column: span 2;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  /* line 1616, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .science-fiction .double-feature div {
+    grid-column: span 2;
+  }
+}
+
+/* line 1626, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.science-fiction .double-feature h5 {
+  margin: 0 10px;
+}
+
+/* line 1630, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.science-fiction .double-feature .textblock {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1630, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .science-fiction .double-feature .textblock {
+    grid-column: span 2;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  /* line 1630, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .science-fiction .double-feature .textblock {
+    grid-column: span 2;
+  }
+}
+
+/* line 1641, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.science-fiction .double-feature .textblock h5 {
+  grid-row: 1;
+  align-self: start;
+}
+
+/* line 1646, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.science-fiction .double-feature .textblock .suddenly-seymour {
+  grid-row: 2;
+  align-self: baseline;
+}
+
+/* line 1654, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.latest-headlines {
+  grid-row: 2;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-shadow: 1px 1px 0px #757575;
+  -moz-box-shadow: 1px 1px 0px #757575;
+  box-shadow: 1px 1px 0px #757575;
+  background: #fdfdfd;
+  margin-bottom: 10px;
+  padding: 0 10px 10px 0;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1654, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .latest-headlines {
+    grid-row: 3;
+    grid-column: span 12;
+  }
+  /* line 218, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .wrap-5 .latest-headlines {
+    grid-column: span 5;
+  }
+  /* line 222, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .latest-headlines .wrap-8 {
+    grid-column: span 8;
+  }
+  /* line 226, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .latest-headlines .wrap-12 {
+    grid-column: span 12;
+  }
+}
+
+/* line 1670, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.latest-headlines .tango {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+}
+
+/* line 1680, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.latest-headlines .tango:last-of-type {
+  border-bottom: 0px;
+}
+
+/* line 1684, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.latest-headlines .tango .timestamp {
+  font-family: "sans", Arial, sans-serif;
+  font-size: .875rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* line 1690, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.latest-headlines .tango > div {
+  align-self: center;
+}
+
+/* line 1696, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.rail {
+  grid-row: 2;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1696, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .rail {
+    grid-row: 4;
+    grid-column: span 12;
+  }
+  /* line 218, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .wrap-5 .rail {
+    grid-column: span 5;
+  }
+  /* line 222, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .rail .wrap-8 {
+    grid-column: span 8;
+  }
+  /* line 226, E:/2020 Refresh Sass - DEV/helpers/_mixins.scss */
+  .rail .wrap-12 {
+    grid-column: span 12;
+  }
+}
+
+/* line 1707, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.trending a {
+  display: block;
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 10px;
+}
+
+/* line 1712, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.trending a:last-of-type {
+  border-bottom: 0px;
+}
+
+/* line 1717, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.trending h5 {
+  margin-bottom: .25rem;
+}
+
+/* line 1721, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.trending span {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: .875rem;
+}
+
+/* line 1729, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.magazines {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 20px;
+}
+
+/* line 1734, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.magazines .details {
+  font-family: "sans", Arial, sans-serif;
+  color: #060606;
+  text-align: center;
+  text-transform: none;
+  line-height: 1.125rem;
+}
+
+/* line 1743, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.fp-calendar {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+/* line 1749, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.fp-calendar .squares {
+  grid-column: span 3;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1749, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .fp-calendar .squares {
+    grid-column: span 6;
+  }
+}
+
+/* line 1756, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.fp-calendar .squares .fa-calendar {
+  font-size: 7.5rem;
+  color: #757575;
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* line 1767, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.catkicker {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  margin-bottom: 0px;
+  color: #060606;
+  text-transform: uppercase;
+}
+
+/* line 1776, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.datestamp {
+  font-family: "sans", Arial, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0px;
+  color: #060606;
+  text-transform: none;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* line 1785, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.clist-byline {
+  font-family: "oswald", "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #060606;
+  font-size: .938rem;
+  margin-bottom: .5rem;
+}
+
+/* line 1793, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.boxed {
+  margin: 0 0 1rem;
+  padding: 1rem;
+  border: 1px solid #757575;
+  background: #fdfdfd;
+  color: #060606;
+}
+
+/* line 1801, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.pastissuesThumb {
+  border: 1px solid #757575;
+  -webkit-box-shadow: 1px 1px 1px #757575;
+  -moz-box-shadow: 1px 1px 1px #757575;
+  box-shadow: 1px 1px 1px #757575;
+}
+
+/* - Masonry Grid - */
+/* line 1807, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.masonry-wrapper {
+  display: grid;
+  margin: 15px;
+}
+
+/* line 1811, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.masonry-wrapper .brick {
+  display: inline-block;
+  width: 32%;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1811, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .masonry-wrapper .brick {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  /* line 1811, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .masonry-wrapper .brick {
+    width: 48%;
+  }
+}
+
+/* line 1822, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.masonry-wrapper .brick .mrec {
+  width: 300px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 1830, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.masonry-wrapper .brick .padding {
+  padding: 10px;
+}
+
+/* line 1834, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.masonry-wrapper .brick .content {
+  padding: 5px;
+}
+
+/* - Forms - */
+/*--------------------------------------------*\
+	File Name: _formBase.scss
+	Created by: Laura Robida
+	For: Zip06.com/Shore Publishing, LLC
+	Environment: Development, Expanded
+	Last updated: January 27, 2020
+/*--------------------------------------------*/
+/* line 8, E:/2020 Refresh Sass - DEV/helpers/_formBase.scss */
+[type=color],
+[type=date],
+[type=datetime-local],
+[type=datetime],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=time],
+[type=url],
+[type=week],
+textarea,
+select {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: .5rem;
+  border: 1px solid #cacaca;
+  border-radius: 0;
+  background-color: #fdfdfd;
+  -webkit-box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+  -moz-box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #060606;
+  transition: box-shadow .5s, border-color .25s ease-in-out;
+}
+
+/* line 40, E:/2020 Refresh Sass - DEV/helpers/_formBase.scss */
+[type=color]:read-only,
+[type=date]:read-only,
+[type=datetime-local]:read-only,
+[type=datetime]:read-only,
+[type=email]:read-only,
+[type=month]:read-only,
+[type=number]:read-only,
+[type=password]:read-only,
+[type=search]:read-only,
+[type=tel]:read-only,
+[type=text]:read-only,
+[type=time]:read-only,
+[type=url]:read-only,
+[type=week]:read-only,
+textarea:read-only,
+select:read-only {
+  background: #f2f2f2;
+}
+
+/* line 43, E:/2020 Refresh Sass - DEV/helpers/_formBase.scss */
+[type=color]:read-only:focus,
+[type=date]:read-only:focus,
+[type=datetime-local]:read-only:focus,
+[type=datetime]:read-only:focus,
+[type=email]:read-only:focus,
+[type=month]:read-only:focus,
+[type=number]:read-only:focus,
+[type=password]:read-only:focus,
+[type=search]:read-only:focus,
+[type=tel]:read-only:focus,
+[type=text]:read-only:focus,
+[type=time]:read-only:focus,
+[type=url]:read-only:focus,
+[type=week]:read-only:focus,
+textarea:read-only:focus,
+select:read-only:focus {
+  outline: none;
+}
+
+/* - Letters Submit Form Specific - */
+/* line 1845, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.submit-letters-form .fa-square {
+  color: #336699;
+  margin-right: 10px;
+}
+
+/* line 1850, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.submit-letters-form fieldset {
+  border: 1px solid #757575;
+  padding: 1.25rem;
+}
+
+/* line 1854, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.submit-letters-form fieldset legend {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+/* line 1860, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.submit-letters-form fieldset p {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+/* line 1866, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.submit-letters-form fieldset label {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  display: block;
+  font-size: .875rem;
+  line-height: 1.8;
+}
+
+/* - Login Form - */
+/* line 1876, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.loginform {
+  margin-right: 10px;
+}
+
+/* line 1879, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.loginform .button {
+  width: 100%;
+}
+
+/* - Article Styles - */
+/* line 1886, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.byline {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #444444;
+  font-size: 1rem;
+  margin: 0 0 1rem 20px;
+  text-transform: uppercase;
+}
+
+/* line 1894, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.byline a:link {
+  color: #444444;
+}
+
+/* line 1900, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.article p {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #060606;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* line 1908, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.article p.news-cut {
+  font-size: .938rem;
+  text-transform: none;
+  margin: 0px 0px 0px 5px;
+}
+
+/* line 1913, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.article p.news-cut a,
+.article p.news-cut a:link,
+.article p.news-cut a:visited {
+  color: #336699;
+}
+
+/* line 1920, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.article p.scene-art-body {
+  font-family: 'AG';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #060606;
+  text-align: left;
+}
+
+/* line 1930, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.article .art-subhede {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #060606;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+/* line 1938, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.article .art-graph-hede {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 1943, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.article a:link,
+.article a:visited {
+  color: #336699;
+}
+
+/* line 1949, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.categoryhede {
+  background: rgba(0, 0, 0, 0.9);
+  width: 50%;
+  padding: 10px;
+  color: #fdfdfd;
+  font-size: 1.35rem;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* line 1961, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.standard {
+  font-family: "oldstandard", "Times New Roman", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0 0 10px 20px;
+}
+
+/* line 1967, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.sponsored-kicker {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  margin-bottom: 0px;
+  color: #060606;
+  text-transform: uppercase;
+}
+
+/* line 1976, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.dateline {
+  text-transform: uppercase;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+/* line 1983, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.news-gallery-launcher {
+  text-align: left;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  color: #060606;
+}
+
+/* line 1990, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.news-gallery-launcher a {
+  color: #336699;
+}
+
+/* line 1995, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.inset-wrap {
+  float: left;
+  clear: both;
+}
+
+/* line 1999, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.inset-wrap .connected-items {
+  float: left;
+  clear: both;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e6e6e6;
+  border-left: 0px;
+  max-width: 300px;
+  padding: 10px;
+  background: #d9e2e9;
+  -webkit-box-shadow: 0 0 1px #757575;
+  -moz-box-shadow: 0 0 1px #757575;
+  box-shadow: 0 0 1px #757575;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 1999, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .inset-wrap .connected-items {
+    max-width: 90%;
+    width: 100%;
+  }
+}
+
+/* line 2016, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.inset-wrap .connected-items .connection-hede {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25rem;
+  margin-bottom: .625rem;
+}
+
+/* line 2022, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.inset-wrap .connected-items .connection-hede .fa-square:before {
+  margin-right: 10px;
+}
+
+/* line 2027, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.inset-wrap .connected-items a {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.025rem;
+  margin-bottom: .625rem;
+  display: inline-block;
+}
+
+/* line 2037, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.staffBio {
+  margin: 10px 0px;
+  border-bottom: 1px solid #666;
+  border-top: 1px solid #666;
+  padding: 10px;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* line 2048, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.staffBio p {
+  clear: left;
+  display: inline-block;
+}
+
+/* line 2053, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.staffBio a,
+.staffBio a:link,
+.staffBio a:visited {
+  color: #336699;
+}
+
+/* line 2060, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.staffBio img {
+  max-height: 100px;
+  margin: 0 20px 10px 0;
+  float: left;
+  display: inline-block;
+}
+
+/* - Images on Article Templates, Image Sliders, and Video - */
+/* line 2069, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.art-image-counter {
+  text-align: center;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: .875rem;
+  margin-bottom: 0px;
+  display: none;
+}
+
+/* line 2078, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.responsive-embed {
+  position: relative;
+  height: 0;
+  margin-bottom: 1rem;
+  padding-bottom: 75%;
+  overflow: hidden;
+}
+
+/* line 2085, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.responsive-embed embed,
+.responsive-embed iframe,
+.responsive-embed object,
+.responsive-embed video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* - Slick Slider -*/
+/* line 2099, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 2113, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 2120, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-list:focus {
+  outline: none;
+}
+
+/* line 2124, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 2129, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 2138, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 2146, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+/* line 2152, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-track:after {
+  clear: both;
+}
+
+/* line 2156, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 2160, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+/* line 2164, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+/* line 2167, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-slide img {
+  display: block;
+}
+
+/* line 2170, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+/* line 2176, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+/* line 2180, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+/* line 2184, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+/* line 2188, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* line 2194, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* line 2198, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+/* line 2202, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+/* line 2213, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* line 2223, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+/* line 2237, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-dots li button:before {
+  font-family: 'awesome';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '\f111';
+  text-align: center;
+  opacity: .25;
+  color: #060606;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 2253, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: #060606;
+}
+
+/* line 2258, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 250px;
+  text-align: center;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin-top: -10px\9;
+  /*lte IE 8*/
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* line 2279, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  background: transparent;
+}
+
+/* line 2287, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+/* line 2294, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: .25;
+}
+
+/* line 2299, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'awesomeSolid';
+  font-size: 2.625rem;
+  line-height: 1;
+  opacity: .75;
+  color: #4682b4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0 1px 0 #4682b4;
+}
+
+/* line 2311, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.next-image:before,
+.prev-image:before {
+  font-family: 'awesome';
+  color: #4682b4;
+  font-size: 2.5rem;
+}
+
+/* line 2317, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.next-image:before {
+  content: '\f35a';
+}
+
+/* line 2320, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+[dir='rtl'] .next-image:before {
+  content: '\f359';
+}
+
+/* line 2324, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.prev-image:before {
+  content: '\f359';
+}
+
+/* line 2328, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+[dir='rtl'] .prev-image:before {
+  content: '\f35a';
+}
+
+/* line 2332, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.prev-image {
+  margin-right: 10px;
+}
+
+/* line 2336, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.next-image {
+  margin-left: 10px;
+}
+
+/* line 2340, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.gallery-navigation {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  text-align: center;
+}
+
+/* line 2345, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-prev {
+  left: -15px;
+}
+
+/* line 2349, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+[dir='rtl'] .slick-prev {
+  right: -15px;
+  left: auto;
+}
+
+/* line 2354, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-prev:before {
+  content: '\f053';
+}
+
+/* line 2358, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+[dir='rtl'] .slick-prev:before {
+  content: '\f0da';
+}
+
+/* line 2362, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-next {
+  right: -15px;
+}
+
+/* line 2366, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: -15px;
+}
+
+/* line 2371, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.slick-next:before {
+  content: '\f054';
+}
+
+/* line 2375, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+[dir='rtl'] .slick-next:before {
+  content: '\f0d9';
+}
+
+/* line 2379, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.extrapics {
+  margin-top: 10px;
+  padding: 10px;
+  display: none;
+}
+
+@-moz-document url-prefix() {
+  /* line 2379, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .extrapics {
+    max-width: 800px;
+  }
+}
+
+/* line 2388, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.extrapics > div {
+  margin-right: 10px;
+  margin-left: 10px;
+  display: none;
+}
+
+/* line 2394, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.extrapics > div:first-child {
+  display: block;
+}
+
+/* line 2398, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.extrapics.slick-initialized > div {
+  display: block;
+}
+
+/* line 2402, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.gallery-cut {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: .938rem;
+  text-transform: none;
+  margin: 0 0 0 5px;
+}
+
+/* line 2409, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.gallery-cut a,
+.gallery-cut a:link,
+.gallery-cut a:visited {
+  color: #336699;
+}
+
+/* line 2416, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.gallery-credit {
+  margin-top: -2.75rem;
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+/* line 2423, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.gal-related-article {
+  border-top: 1px solid #060606;
+  margin-top: 10px;
+  padding-top: 10px;
+  font-family: "sans", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+/* line 2430, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.gal-related-article span {
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 2434, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.gal-related-article a,
+.gal-related-article a:link,
+.gal-related-article a:visited {
+  color: #336699;
+}
+
+/* - Commenting - */
+/* line 2442, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.comment-hede {
+  font-family: "oldstandard", "Times New Roman", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 0px;
+  font-size: 1.5rem;
+}
+
+/* line 2449, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.comment-error {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* line 2455, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.comment-error p {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.125rem;
+}
+
+/* line 2459, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.comment-error p:last-of-type {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+/* line 2468, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.comment-box {
+  display: grid;
+  grid-column-gap: 1.5rem;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1300px;
+  grid-template-columns: repeat(8, 1fr);
+  border-bottom: 1px solid #808080;
+}
+
+/* line 2477, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.comment-box .comment-title-bar {
+  grid-column: span 8;
+  color: #060606;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding: 5px 5px 0px 5px;
+}
+
+/* line 2485, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.comment-box .comment-title-bar p {
+  margin: 0px;
+  font-size: 1.25rem;
+}
+
+/* line 2489, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.comment-box .comment-title-bar p .verifiedUser {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: .85rem;
+  text-transform: uppercase;
+  color: #060606;
+}
+
+/* line 2497, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.comment-box .comment-title-bar p .timestamp {
+  font-family: "sans", Arial, sans-serif;
+  font-size: .875rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* line 2505, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.comment-box .comment-body {
+  grid-column: 2 / 7;
+}
+
+/* line 2508, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.comment-box .comment-body p {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #060606;
+  font-size: 1rem;
+}
+
+/* line 2515, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.comment-box .comment-body a,
+.comment-box .comment-body a:link,
+.comment-box .comment-body a:visited {
+  color: #336699;
+}
+
+/* line 2522, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.comment-box .reportIt {
+  grid-column: 8 / 8;
+}
+
+/* line 2525, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.comment-box .reportIt .fa-flag {
+  text-align: center;
+}
+
+/* line 2528, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.comment-box .reportIt .fa-flag:after {
+  display: block;
+  content: 'Report';
+  text-align: center;
+  color: #060606;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/* - Article Share Tools - */
+/* line 2544, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.shareTools {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* line 2548, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.shareTools .shareButton {
+  grid-column: span 3;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 2549, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .shareTools .shareButton:first-of-type {
+    grid-column-start: 4;
+    grid-column-end: 7;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 2548, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .shareTools .shareButton {
+    grid-column: span 4;
+  }
+}
+
+/* line 2562, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.shareTools .fb-share,
+.shareTools .more-share,
+.shareTools .tw-share {
+  width: 100%;
+  display: inline-block;
+  font: normal normal normal 14px/1 'awesomebrands';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialised;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1023px) {
+  /* line 2562, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .shareTools .fb-share,
+  .shareTools .more-share,
+  .shareTools .tw-share {
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 2562, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .shareTools .fb-share,
+  .shareTools .more-share,
+  .shareTools .tw-share {
+    height: 42px;
+  }
+}
+
+/* line 2583, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.shareTools .fb-share {
+  background: #3b5998;
+}
+
+/* line 2585, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.shareTools .fb-share:before {
+  content: '\f39e';
+  color: #fdfdfd;
+}
+
+/* line 2591, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.shareTools .tw-share {
+  background: #1da1f2;
+}
+
+/* line 2593, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.shareTools .tw-share:before {
+  content: '\f099';
+  color: #fdfdfd;
+}
+
+/* line 2599, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.shareTools .more-share {
+  background: #fdfdfd;
+  border: 1px solid #060606;
+  font: normal normal normal 14px/1 'awesomeSolid';
+}
+
+/* line 2603, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.shareTools .more-share:before {
+  content: '\f141';
+  color: #060606;
+}
+
+/* line 2609, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.shareTools .more-share-container {
+  display: none;
+  border: 1px solid #444444;
+  border-top: 0px;
+  padding: 10px;
+  background: #fdfdfd;
+}
+
+/* line 2616, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.shareTools .more-share-container .fa-envelope,
+.shareTools .more-share-container .fa-print {
+  font-size: 1.75rem;
+  text-align: center;
+  color: #060606;
+}
+
+/* - Utility Pages - */
+/* line 2628, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.standardStuff p {
+  font-family: "sans", Arial, sans-serif;
+}
+
+/* line 2632, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.standardStuff .bold {
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 2636, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.standardStuff .italic {
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* line 2640, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.standardStuff label {
+  display: block;
+}
+
+/* line 2644, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.standardStuff .inline {
+  display: inline-block;
+}
+
+/* line 2648, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.standardStuff a,
+.standardStuff a:link,
+.standardStuff a:visited {
+  color: #336699;
+}
+
+/* line 2654, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.standardStuff h3 a:link,
+.standardStuff h3 a:visited,
+.standardStuff h3 {
+  color: #060606;
+}
+
+/* - Food Court & Scene- */
+/* line 2663, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.food-court-logo {
+  background: url("http://web.archive.org/web/20240426180428im_/https://static.zip06.com/zip06/assets/images/icons/foodcourt/food-court-logo.png");
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+/* line 2669, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.scene-logo {
+  background: url("http://web.archive.org/web/20240426180428im_/https://static.zip06.com/zip06/assets/images/icons/scene/scene-skyline-logo-200-2500.png");
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+/* line 2675, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.food-court-logo,
+.scene-logo {
+  height: 160px;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 2675, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .food-court-logo,
+  .scene-logo {
+    height: 140px;
+  }
+}
+
+/* line 2683, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.foodCourt-Wrap {
+  display: grid;
+  grid-column-gap: 1.5rem;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1300px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* line 2691, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.foodCourt-Wrap .masonry {
+  grid-column: span 9;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 2691, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .foodCourt-Wrap .masonry {
+    grid-column: span 12;
+    grid-row: 2;
+  }
+}
+
+/* line 2698, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.foodCourt-Wrap .masonry .brick {
+  width: 48%;
+}
+
+/* line 2703, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.foodCourt-Wrap .masonry-rail {
+  grid-column: span 3;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 2703, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .foodCourt-Wrap .masonry-rail {
+    grid-row: 1;
+    grid-column: span 12;
+  }
+}
+
+/* line 2711, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.foodCourt-Wrap .foodcourt-mailer {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 2715, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.foodCourt-Wrap .foodcourt-mailer label {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 2720, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.foodCourt-Wrap .foodcourt-mailer .g-recaptcha {
+  -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  -o-transform: scale(0.85);
+  transform: scale(0.85);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+
+/* line 2729, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.card-topper h2,
+.card-topper h2 a:link,
+.card-topper h2 a:visited {
+  color: #060606;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin-left: 5px;
+  line-height: 3px;
+  font-family: 'AG';
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 2741, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+img.header-icon {
+  height: 35px;
+  margin: 10px 10px 5px 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 2747, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.scene-over {
+  position: relative;
+  width: 100%;
+}
+
+/* line 2751, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.scene-over .overbox {
+  background: #060606;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: height 0.3s ease-in-out;
+  -moz-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+
+/* line 2761, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.scene-over .overbox h3,
+.scene-over .overbox h4 {
+  font-family: 'AG';
+  font-weight: 700;
+  font-style: normal;
+  margin: .2rem 10px 0px 10px;
+  color: #fdfdfd;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* line 2773, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.scene-over img {
+  width: 100%;
+}
+
+/* line 2778, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.scene-art-hede {
+  font-family: 'AG';
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
+  display: block;
+}
+
+/* - Mental Health - */
+/* line 2786, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mental-resource-rail {
+  font-family: "sans", Arial, sans-serif;
+  border-left: 1px solid #999;
+  padding-left: 10px h3;
+  padding-left-font-famly: "sans", Arial, sans-serif;
+  padding-left-font-weight: 700;
+  padding-left-font-style: normal;
+  padding-left-color: #060606;
+  padding-left-text-align: center;
+}
+
+/* line 2799, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mentalhealth-hede {
+  text-align: left;
+  margin-left: 10px;
+  line-height: 2rem;
+  font-weight: 400 h3;
+  font-weight-font-weight: 700;
+  font-weight-font-style: normal;
+  font-weight-color: #060606;
+}
+
+/* line 2811, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mental-resource-rail .mental-rail-hede,
+.mentalhealth-attrib,
+.mentalhealth-quote {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+/* line 2819, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mental-resource-rail .mental-line {
+  border-bottom: 1px solid #999;
+  width: 95%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 2826, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mental-resource-rail .mental-rail-hede {
+  display: block;
+  font-weight: 400;
+  margin-bottom: -10px;
+  font-size: 1.25rem;
+}
+
+/* line 2833, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mentalhealth-quote {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #060606;
+  margin-bottom: 5px;
+}
+
+/* line 2840, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mentalhealth-attrib {
+  font-size: 1rem;
+  color: #060606;
+}
+
+/* line 2845, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mentalhealth-navbar {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  grid-column: span 12;
+  border-top: 2px solid #7b2952;
+  border-bottom: 2px solid #7b2952;
+}
+
+/* line 2852, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mentalhealth-navbar ul {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* line 2856, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mentalhealth-navbar ul li {
+  display: inline-block;
+  color: #4d4d4d;
+  margin: 0 10px 0 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: small-caps;
+  padding: 10px;
+}
+
+/* line 2865, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mentalhealth-navbar ul li a {
+  color: #4d4d4d;
+}
+
+/* - Search Results Page - */
+/* line 2873, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.teaser {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* line 2881, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+a.search-reset {
+  color: #fdfdfd !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "sans", Arial, sans-serif;
+  font-size: 1rem;
+  width: 95%;
+  margin-top: 10px;
+}
+
+/* line 2891, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.searchfilter-item {
+  display: inline-block;
+  padding: 5px;
+  background: #fdfdfd;
+  color: #060606;
+  border: 1px solid #b3b3b3;
+  -webkit-box-shadow: 1px 1px 1px #ccc;
+  -moz-box-shadow: 1px 1px 1px #ccc;
+  box-shadow: 1px 1px 1px #ccc;
+  margin: 10px;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+/* - Staff Bio Pages - */
+/* line 2905, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.polaroid {
+  position: relative;
+  width: 220px;
+  margin: 10px 15px 10px 0;
+}
+
+/* line 2910, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.polaroid img {
+  border: 10px solid #fdfdfd;
+  border-bottom: 45px solid #fdfdfd;
+  -webkit-box-shadow: 3px 3px 3px #757575;
+  -moz-box-shadow: 3px 3px 3px #757575;
+  box-shadow: 3px 3px 3px #757575;
+}
+
+/* line 2918, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.reporterStories {
+  padding: 10px;
+  border-left: 1px solid #666;
+}
+
+/* line 2922, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.reporterStories a,
+.reporterStories a:link,
+.reporterStories a:visited {
+  color: #060606;
+}
+
+/* line 2928, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.reporterStories h4 {
+  font-family: "oswald", "sans", Arial, sans-serif;
+  font-size: 1.25rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #666;
+}
+
+/* line 2934, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.reporterStories h4:last-of-type {
+  border-bottom: 0px;
+}
+
+/* - Submit Forms - */
+/* line 2941, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.submit-steps-wrapper {
+  position: relative;
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* line 2947, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.submit-steps-wrapper .submit-steps {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background: #336699;
+}
+
+/* line 2953, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.submit-steps-wrapper .submit-steps .submit-steps-text {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  margin-bottom: 0px;
+  color: #fdfdfd;
+  line-height: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 2965, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.submit-steps-wrapper .submit-steps-header {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #444444;
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  margin-bottom: 0;
+}
+
+/* line 2977, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+label.events-submit {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #060606;
+  font-size: 1.25rem;
+  font-variant: small-caps;
+}
+
+/* line 2984, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+label.events-submit select {
+  font-variant: normal;
+}
+
+/* line 2988, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+label.events-submit .button {
+  font-size: 1.25rem;
+}
+
+/* line 2993, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+label.events-submit-lesser {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #060606;
+  font-size: 1rem;
+}
+
+/* line 2999, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+label.events-submit-lesser.underline {
+  text-decoration: underline;
+}
+
+/* line 3004, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.submit-explanation-text {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  margin-bottom: 0px;
+  color: #060606;
+  display: inline-block;
+}
+
+/* line 3013, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.filecontainer {
+  overflow: hidden;
+  position: relative;
+  background: #fdfdfd;
+  float: left;
+  padding: 5px;
+  border: 1px solid #D2D6DF;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 0 1px #fff;
+  -moz-box-shadow: inset 0 0 0 1px #fff;
+  box-shadow: inset 0 0 0 1px #fff;
+  margin-bottom: 10px;
+}
+
+/* line 3024, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.filecontainer .filecontainer-inner {
+  border: 2px dashed #D2D6DF;
+  padding: 10px;
+}
+
+/* line 3028, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.filecontainer .filecontainer-inner:hover {
+  border: 2px dashed #0278b8;
+}
+
+/* line 3033, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.filecontainer [type=file] {
+  cursor: pointer;
+  filter: alpha(opacity=0);
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+
+/* line 3046, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.cropper-preview {
+  max-width: 270px;
+  overflow: hidden;
+  text-indent: -50%;
+}
+
+/* line 3051, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.cropper-preview .crop-photo-preview {
+  max-width: initial;
+  border: 2px solid #ccc;
+}
+
+/* line 3057, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.error-explanation {
+  display: none;
+  visibility: hidden;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #060606;
+  font-variant: none;
+  font-size: 1.125rem;
+}
+
+/* line 3066, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.error-explanation.active {
+  display: block;
+  visibility: visible;
+}
+
+/* line 3072, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+#loader {
+  margin: 0 auto;
+  display: block;
+  z-index: 9999;
+  height: 100px;
+  background: url(http://web.archive.org/web/20240426180428im_/https://static.zip06.com/zip06/assets/images/icons/ajax-loader3.gif) center no-repeat;
+}
+
+/* line 3081, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.event-submit-form fieldset {
+  border: 0px;
+}
+
+/* line 3085, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.event-submit-form textarea {
+  text-transform: none;
+  font-variant: none;
+}
+
+/* - Events Calendar & Events Filtering - */
+/* line 3092, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.events-filter-box {
+  margin: auto 0px 10px 0px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  clear: both;
+  padding: 10px;
+}
+
+/* line 3099, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.events-filter-box div {
+  border-right: 1px dotted #ccc;
+}
+
+/* line 3102, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.events-filter-box div:last-of-type {
+  border: none;
+}
+
+/* line 3107, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.events-filter-box label {
+  font-family: "oswald", "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
+/* - Datepicker - */
+/* line 3115, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.ui-datepicker-today .ui-state-active {
+  background-color: #b7ca9b !important;
+  border: 1px solid #7e9b53 !important;
+}
+
+/* line 3120, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.ui-datepicker-today .ui-state-highlight,
+.ui-state-active,
+.ui-state-highlight,
+.ui-state-hover {
+  border: 1px solid #537e9b !important;
+  background-color: #cad7e3 !important;
+}
+
+/* line 3128, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.ui-datepicker-title {
+  font-family: "ubuntu", "Arial Black", sans-serif;
+  font-size: 1.125rem;
+}
+
+/* line 3133, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.ui-datepicker .ui-datepicker-prev .ui-icon,
+.ui-datepicker .ui-datepicker-next .ui-icon {
+  height: 1.25rem;
+}
+
+/* line 3138, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.ui-widget-header {
+  border: 1px solid #537e9b !important;
+  background: #537e9b !important;
+}
+
+/* line 3143, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.ui-state-default {
+  color: #060606 !important;
+  text-align: center !important;
+}
+
+/* line 3148, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+#datepicker,
+#datepicker2 {
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  -webkit-transition: border 0.3s;
+  -moz-transition: border 0.3s;
+  -o-transition: border 0.3s;
+  transition: border 0.3s;
+  width: 80%;
+}
+
+/* line 3157, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+#datepicker:focus,
+#datepicker.focus,
+#datepicker2:focus,
+#datepicker2.focus {
+  border-bottom: solid 2px #969696;
+  outline: none;
+}
+
+/* line 3166, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.eventsSelectbox {
+  width: 90%;
+}
+
+/* line 3170, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.events-search-terms {
+  font-family: "oswald", "sans", Arial, sans-serif;
+  font-size: 1.25rem;
+  color: #060606;
+  margin-bottom: 10px;
+}
+
+/* line 3177, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.cal-details-wrapper {
+  padding: 5px;
+}
+
+/* line 3180, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.cal-details-wrapper .kicker,
+.cal-details-wrapper a .kicker {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: .875rem;
+  color: #060606;
+  margin-bottom: 0px;
+}
+
+/* line 3189, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.cal-details-wrapper .calpage-eventhede {
+  font-family: "oswald", "sans", Arial, sans-serif;
+  color: #060606;
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+}
+
+/* line 3195, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.cal-details-wrapper .calpage-eventhede:hover {
+  color: #060606;
+}
+
+/* line 3200, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.cal-details-wrapper .calpage-eventdetails,
+.cal-details-wrapper a .calpage-eventdetail {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #060606;
+  margin-bottom: 0px;
+}
+
+/* - Calendar Details Pages - */
+/* line 3212, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.events-hede {
+  font-family: "oswald", "sans", Arial, sans-serif;
+  color: #060606;
+  margin-bottom: .5rem;
+}
+
+/* line 3218, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.events-day-time {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  color: #060606;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+/* line 3227, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.recurrence-days {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #060606;
+}
+
+/* line 3233, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.recurrence-days ul {
+  padding-left: 15px;
+  list-style-type: square;
+  margin-bottom: 0px;
+}
+
+/* line 3240, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.events-body {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #060606;
+}
+
+/* line 3247, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.reportmistake {
+  float: right;
+  text-align: right;
+}
+
+/* line 3251, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.reportmistake a,
+.reportmistake a:link,
+.reportmistake a:visited {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+/* - Events Export - */
+/* line 3261, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.export-filtercontent {
+  padding: 10px;
+  background: #336699;
+  color: #fdfdfd;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 20px;
+}
+
+/* - Events Submit - */
+/* line 3271, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.decision-maker {
+  display: block;
+  margin: 0 auto 10px auto;
+  padding: 10px;
+  background: #336699;
+  color: #fdfdfd;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 2px 5px #060606;
+  -moz-box-shadow: 1px 2px 5px #060606;
+  box-shadow: 1px 2px 5px #060606;
+  cursor: pointer;
+  width: 200px;
+}
+
+/* line 3283, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.autocomplete-suggestions {
+  margin-bottom: 50px;
+  z-index: 999;
+  border: 1px solid #060606;
+  padding: 10px;
+  background: #fdfdfd;
+}
+
+/* line 3291, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.autocomplete-suggestion:hover {
+  background: rgba(117, 117, 117, 0.5);
+  padding: 10px;
+  color: #fdfdfd;
+}
+
+/* - Registration Modal & Slider - */
+/* line 3300, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.registration input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* line 3304, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.registration .show-pword {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: .9rem;
+  display: block;
+  line-height: 1;
+}
+
+/* - User Dasboard & Registration Pages - */
+/* line 3314, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.dashboard {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* line 3318, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.dashboard .account-subhede {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  display: block;
+  border-bottom: 1px solid #808080;
+  line-height: 1;
+}
+
+/* line 3325, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.dashboard .account-subhede .question {
+  font-size: .85rem;
+  margin-left: 10px;
+}
+
+/* line 3331, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.dashboard .account-details {
+  margin-left: 25px;
+}
+
+/* line 3335, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.dashboard .fa-facebook:before {
+  font-size: 1.5rem;
+  color: #3b5998;
+}
+
+/* line 3340, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.dashboard .fa-twitter:before {
+  font-size: 1.5rem;
+  color: #1da1f2;
+}
+
+/* - MediaKit - */
+/* line 3347, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-pop {
+  border-radius: 10px;
+  border-color: #9bdffd;
+  background-color: #9be9fd !important;
+  padding: 10px !important;
+  -webkit-box-shadow: 1px 1px #9bdffd;
+  -moz-box-shadow: 1px 1px #9bdffd;
+  box-shadow: 1px 1px #9bdffd;
+}
+
+/* line 3354, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-pop .fa-envelope {
+  font-size: 5rem;
+  color: #fdfdfd;
+  display: block;
+  text-align: center;
+}
+
+/* line 3361, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-pop h2 {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #060606;
+  text-align: center;
+}
+
+/* line 3368, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-pop p {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* line 3375, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-pop p .bold {
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 3380, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-pop .button {
+  background: #060606;
+  color: #fdfdfd;
+}
+
+/* line 3386, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit {
+  display: grid;
+  grid-column-gap: 1.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* line 3392, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .top-strip {
+  border-bottom: 1px solid #060606;
+  background: #fdfdfd;
+  padding: 150px 25px;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 3392, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .mediakit .top-strip {
+    background: url("http://web.archive.org/web/20240426180428im_/https://static.zip06.com/zip06/assets/images/mediakit/mediakit-bg-feather-2020-2.png") no-repeat;
+    background-position: right center;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 3392, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .mediakit .top-strip {
+    background: none;
+  }
+}
+
+/* line 3406, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .top-strip h2 {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #060606;
+  margin-left: 25px;
+  line-height: 2.125rem;
+}
+
+/* line 3413, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .top-strip h2 .getup {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 3419, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .top-strip p {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+  color: #060606;
+  text-align: center;
+}
+
+/* line 3426, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .top-strip p a,
+.mediakit .top-strip p a:link,
+.mediakit .top-strip p a:visited {
+  font-weight: 700;
+  font-style: normal;
+  color: #336699;
+}
+
+/* line 3436, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .top-strip a.button {
+  display: block;
+  margin: auto;
+  background: #0496d6;
+  color: #fdfdfd;
+  width: 50%;
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 3449, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .options-strip {
+  background: #fdfdfd;
+  color: #060606;
+  border-bottom: 1px solid #060606;
+  padding: 25px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 3457, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .options-strip .push-it {
+  background: #0496d6;
+  border-radius: 50%;
+  border: 1px solid #0496d6;
+  padding: 10px;
+  color: #fdfdfd;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  display: inline-block;
+  line-height: 180px;
+  -webkit-box-shadow: 0px 2px 1px 1px #060606;
+  -moz-box-shadow: 0px 2px 1px 1px #060606;
+  box-shadow: 0px 2px 1px 1px #060606;
+}
+
+@media only screen and (max-width: 1023px) {
+  /* line 3457, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .mediakit .options-strip .push-it {
+    width: 160px;
+    height: 160px;
+    line-height: 145px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 3457, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .mediakit .options-strip .push-it {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  /* line 3457, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .mediakit .options-strip .push-it {
+    margin-right: 10px;
+  }
+}
+
+/* line 3489, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .market-strip {
+  background-color: #060606;
+  border-bottom: 1px solid #fdfdfd;
+  padding: 25px 0px;
+  width: 100%;
+}
+
+/* line 3496, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .market-strip h2 {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #fdfdfd;
+  margin-left: 25px;
+}
+
+/* line 3503, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .market-strip p {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+  color: #fdfdfd;
+  text-align: center;
+}
+
+/* line 3510, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .market-strip p .stat-pullout {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #0496d6;
+}
+
+/* line 3519, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .market-strip img {
+  margin: -10px auto 10px auto;
+  display: block;
+}
+
+/* line 3524, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .market-strip a.button {
+  width: 30%;
+  background: #0496d6;
+  color: #fdfdfd;
+  font-size: 1.125rem;
+}
+
+/* line 3532, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .print-strip {
+  background: #ececec;
+  border-bottom: 1px solid #060606;
+  padding: 25px 0px;
+  width: 100%;
+}
+
+/* line 3538, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .print-strip h2 {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #060606;
+  margin-left: 25px;
+}
+
+/* line 3545, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .print-strip p {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+  color: #060606;
+  text-align: center;
+  margin: 10px 25px;
+}
+
+/* line 3553, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .print-strip p a,
+.mediakit .print-strip p a:link,
+.mediakit .print-strip p a:visited {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #336699;
+}
+
+/* line 3562, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .print-strip .button {
+  width: 30%;
+  background: #0496d6;
+  color: #fdfdfd;
+  font-size: 1.125rem;
+}
+
+/* line 3570, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .product-strip {
+  background: #fdfdfd;
+  padding: 25px 0px;
+  width: 100%;
+}
+
+/* line 3575, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .product-strip h2 {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #060606;
+  margin-left: 25px;
+}
+
+/* line 3582, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .product-strip p {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+  color: #060606;
+  text-align: center;
+}
+
+/* line 3590, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit .product-strip .button {
+  width: 30%;
+  background: #0496d6;
+  color: #fdfdfd;
+  font-size: 1.125rem;
+}
+
+/* line 3599, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside {
+  background: #fdfdfd;
+  padding: 25px;
+}
+
+/* line 3603, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside p {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+  color: #060606;
+  text-align: left;
+}
+
+/* line 3613, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside p.centerall a,
+.mediakit-inside p.centerall a:link,
+.mediakit-inside p.centerall a:visited {
+  text-transform: none;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* line 3621, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside p a,
+.mediakit-inside p a:link,
+.mediakit-inside p a:visited {
+  color: #336699;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* line 3630, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside p.bigbluehede {
+  font-weight: 700;
+  font-style: normal;
+  color: #0496d6;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
+
+/* line 3637, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside p.blue {
+  font-weight: 700;
+  font-style: normal;
+  color: #0496d6;
+  margin: auto auto 0px -10px;
+}
+
+/* line 3643, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside p.boldhede {
+  font-weight: 700;
+  font-style: normal;
+  margin: 10px auto 0px auto;
+  color: #060606;
+}
+
+/* line 3648, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside p.boldhede.stoodup {
+  text-transform: uppercase;
+}
+
+/* line 3653, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside p .fineprint, .mediakit-inside p.fineprint {
+  font-weight: 400;
+  font-style: normal;
+  font-size: .75rem;
+  color: #060606;
+}
+
+/* line 3660, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside p.indent {
+  margin: auto auto 0px 25px;
+}
+
+/* line 3663, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside p.indent a,
+.mediakit-inside p.indent a:link,
+.mediakit-inside p.indent a:visited {
+  color: #0496d6;
+  text-transform: none;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* line 3673, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .arrow {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 40px solid #0496d6;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* line 3683, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside h1,
+.mediakit-inside h2 {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #060606;
+  display: inline;
+  vertical-align: super;
+}
+
+/* line 3692, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .demohede {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.75rem;
+  color: #0496d6;
+}
+
+/* line 3699, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .pubname {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  color: #f04e23;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+/* line 3708, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .left,
+.mediakit-inside .right {
+  font-family: "sans", Arial, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0px;
+}
+
+/* line 3714, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .left.bold,
+.mediakit-inside .right.bold {
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 3719, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .left {
+  text-align: left;
+}
+
+/* line 3723, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .right {
+  text-align: right;
+}
+
+/* line 3727, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .demowrap {
+  display: grid;
+  margin: 0;
+  padding: 10px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* line 3733, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .demowrap .demofull {
+  grid-column: span 12;
+}
+
+/* line 3737, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .demowrap .demoleft {
+  grid-column: span 8;
+}
+
+/* line 3741, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .demowrap .demoright {
+  grid-column: span 4;
+}
+
+/* line 3747, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .mkitmidborder {
+  border-left: 1px solid #b1d1ee;
+  border-top: 0px;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 3747, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .mediakit-inside .mkitmidborder {
+    border-top: 1px solid #b1d1ee;
+  }
+}
+
+/* line 3757, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .circtotals {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #0496d6;
+  text-align: center;
+}
+
+/* line 3765, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .circgrandtotal {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #f04e23;
+  text-align: center;
+}
+
+/* line 3774, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .updated {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: .75rem;
+  text-align: center;
+}
+
+/* line 3781, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside table {
+  border-collapse: separate;
+  border-spacing: 20px 5px;
+}
+
+/* line 3786, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .bluebox {
+  padding: 10px;
+  background: #d8e8f7;
+}
+
+/* line 3790, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .bluebox .blue {
+  margin-left: 0px;
+}
+
+/* line 3795, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .papersframe {
+  border: 1px solid #060606;
+  -webkit-box-shadow: 2px 2px 2px #757575;
+  -moz-box-shadow: 2px 2px 2px #757575;
+  box-shadow: 2px 2px 2px #757575;
+  margin-bottom: 10px;
+}
+
+/* line 3801, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .blueline {
+  border-bottom: 2px solid #0496d6;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 50%;
+}
+
+/* line 3808, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .ratetable {
+  border: 0;
+  font-family: "sans", Arial, sans-serif;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+/* line 3814, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .ratetable tr:nth-child(even) {
+  border-bottom: 0;
+  background: #f1f1f1;
+}
+
+/* line 3819, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .ratetable tr.bordered {
+  border-bottom: 2px solid #060606;
+}
+
+/* line 3823, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .ratetable td {
+  font-weight: 400;
+  font-style: normal;
+  padding: .5rem .625rem .625rem;
+}
+
+/* line 3827, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .ratetable td.hede {
+  font-size: .75rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 3832, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .ratetable td.adsize {
+  font-size: .875rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 3837, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .ratetable td.bighede {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 3843, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .ratetable td .nested td {
+  padding: 0 .625rem .625rem;
+}
+
+/* line 3846, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .ratetable td .nested td.hede {
+  text-align: center;
+}
+
+/* line 3854, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .dottedline {
+  border-right: 1px dotted #060606;
+  padding-right: 10px;
+}
+
+/* line 3859, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .dottedtop {
+  border-top: 1px dotted #060606;
+  padding-top: 10px;
+}
+
+/* line 3865, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .magazine-rail p {
+  text-align: center;
+  font-size: .9rem;
+}
+
+/* line 3869, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.mediakit-inside .magazine-rail p.issue {
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* - Header Banners - */
+/* line 3878, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 0 1.25rem 0;
+  padding: 0;
+  -webkit-box-shadow: 0px 1px 0px 1px #f2f2f2;
+  -moz-box-shadow: 0px 1px 0px 1px #f2f2f2;
+  box-shadow: 0px 1px 0px 1px #f2f2f2;
+}
+
+/* line 3886, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner .full {
+  grid-column: span 12;
+}
+
+/* line 3890, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.bestOn {
+  background: #060606;
+  color: #fdfdfd;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+}
+
+/* line 3897, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.bestOn .logo {
+  grid-column: span 2;
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 3897, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .banner.bestOn .logo {
+    grid-column: span 12;
+  }
+}
+
+/* line 3907, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.bestOn .content {
+  grid-column: span 8;
+  text-align: center;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 3907, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .banner.bestOn .content {
+    grid-column: span 12;
+  }
+}
+
+/* line 3915, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.bestOn .content p .best {
+  text-transform: uppercase;
+  display: block;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: .5;
+}
+
+/* line 3924, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.bestOn .content p .sub {
+  display: block;
+}
+
+/* line 3928, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.bestOn .content p .shoreline {
+  display: block;
+  font-family: "beautiful", "sans", Arial, sans-serif;
+  font-size: 5rem;
+  line-height: .75;
+  font-weight: 400;
+  font-style: normal;
+  color: #f6e082;
+}
+
+/* line 3939, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.bestOn .content .button {
+  background: #f6e082;
+  color: #060606;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+/* line 3950, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.beacon {
+  background: #000;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+}
+
+/* line 3956, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.beacon .content {
+  grid-column: 2 / 11;
+  text-align: center;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 3956, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .banner.beacon .content {
+    grid-column: span 12;
+  }
+}
+
+/* line 3963, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.beacon .content .logo {
+  margin: auto;
+  display: block;
+  text-align: center;
+  max-width: 400px;
+}
+
+/* line 3970, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.beacon .content p {
+  color: #fdfdfd;
+}
+
+/* line 3974, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.beacon .content .button {
+  background: #d33988;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 4px 1 px #fdfdfd;
+  -moz-box-shadow: 0px 2px 4px 1 px #fdfdfd;
+  box-shadow: 0px 2px 4px 1 px #fdfdfd;
+  margin: 10px auto;
+  padding: 10px;
+  display: block;
+}
+
+/* line 3985, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.standard, .banner.full {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #060606;
+  padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+}
+
+/* line 3992, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.standard a,
+.banner.standard a:link,
+.banner.standard a:visited, .banner.full a,
+.banner.full a:link,
+.banner.full a:visited {
+  color: #060606;
+}
+
+/* line 3998, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.standard.weather, .banner.full.weather {
+  background: #8deeee;
+  border: 1px solid #8dd6ee;
+}
+
+/* line 4003, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.standard.news, .banner.full.news {
+  background: #f53829;
+  border: 1px solid #cc1f3b;
+}
+
+/* line 4009, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.standard.bestof, .banner.full.bestof {
+  background: #060606;
+  color: #fdfdfd;
+}
+
+/* line 4013, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.standard.bestof div, .banner.full.bestof div {
+  padding: 10px;
+  border: 1px solid #fdfdfd;
+  -webkit-box-shadow: 0px 0px 0px 2px #fdfdfd;
+  -moz-box-shadow: 0px 0px 0px 2px #fdfdfd;
+  box-shadow: 0px 0px 0px 2px #fdfdfd;
+}
+
+/* line 4018, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.standard.bestof div button, .banner.full.bestof div button {
+  background: #fdfdfd;
+  color: #060606;
+  text-transform: uppercase;
+}
+
+/* line 4026, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.standard.other, .banner.full.other {
+  background: #fadc13;
+  border: 1px solid #fac913;
+  text-align: center;
+}
+
+/* line 4031, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.standard.other .breaking, .banner.full.other .breaking {
+  text-transform: uppercase;
+  font-family: "oswald", "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+
+/* line 4038, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.standard.other .breaking ~ a.breaking-link,
+.banner.standard.other .breaking ~ a.breaking-link:link,
+.banner.standard.other .breaking ~ a.breaking-link:visited, .banner.full.other .breaking ~ a.breaking-link,
+.banner.full.other .breaking ~ a.breaking-link:link,
+.banner.full.other .breaking ~ a.breaking-link:visited {
+  font-family: "oswald", "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
+/* line 4048, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.standard .fa-alert:before, .banner.full .fa-alert:before {
+  color: #fdfdfd;
+  margin-right: 10px;
+  font-size: 2.5rem;
+}
+
+/* line 4054, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.standard .left, .banner.full .left {
+  grid-column: span 1;
+}
+
+/* line 4058, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.standard .middle, .banner.full .middle {
+  grid-column: span 7;
+}
+
+/* line 4061, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.standard .middle.right-border, .banner.full .middle.right-border {
+  border-right: 1px solid #060606;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 4061, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .banner.standard .middle.right-border, .banner.full .middle.right-border {
+    border-right: 0px;
+    margin-right: 0px;
+  }
+}
+
+/* line 4072, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.standard .right, .banner.full .right {
+  grid-column: span 4;
+}
+
+/* line 4076, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.standard .full, .banner.full .full {
+  grid-column: span 12;
+}
+
+/* line 4081, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner .vpay {
+  background: #000080;
+  color: #fdfdfd;
+  display: block;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+  text-align: center;
+}
+
+/* line 4090, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner .vpay a.voluntary-more {
+  background: #fdfdfd;
+  border-radius: 20px;
+  border: 1px solid #fdfdfd;
+  color: #060606;
+  display: block;
+  font-size: 1rem;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+/* line 4104, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.election-special {
+  background: #b22234;
+  color: #fdfdfd;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 10px;
+}
+
+/* line 4111, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.election-special h4 {
+  font-family: "ubuntu", "Arial Black", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  grid-column: span 12;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* line 4119, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.election-special div {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 4119, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .banner.election-special div {
+    grid-column: span 6;
+  }
+}
+
+/* line 4127, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.election-special div a {
+  color: #fdfdfd;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 4133, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner.election-special p {
+  grid-column: span 12;
+  text-align: center;
+  margin-top: 10px;
+  font-size: .8rem;
+}
+
+/* line 4141, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner .close {
+  float: right;
+}
+
+/* line 4144, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.banner .close:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'awesomeSolid';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f057';
+}
+
+/* - Plain Page Topper Banner - */
+/* line 4153, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.localFund {
+  display: grid;
+  grid-column-gap: 1.5rem;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1300px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* line 4161, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.localFund div {
+  grid-column: span 12;
+}
+
+/* line 4165, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.localFund h4 {
+  font-family: "oswald", "sans", Arial, sans-serif;
+  margin-top: 10px;
+}
+
+/* line 4170, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.localFund p {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* line 4177, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.localFund p.sig {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* - Special Coverage Box - */
+/* line 4186, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.specialCoverage {
+  border: 1px solid #060606;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 4191, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.specialCoverage h4 {
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  background: #f2f2f2;
+  color: #060606;
+}
+
+/* line 4199, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.specialCoverage .innerTube {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+/* line 4206, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.specialCoverage img {
+  border: 1px solid #060606;
+}
+
+/* line 4210, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.specialCoverage ul {
+  list-style-type: square;
+}
+
+/* line 4213, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.specialCoverage ul li a {
+  font-family: "oswald", "sans", Arial, sans-serif;
+  color: #060606;
+}
+
+/* line 4219, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.specialCoverage a.headline {
+  font-family: "oswald", "sans", Arial, sans-serif;
+  color: #060606;
+  font-size: 1.25rem;
+}
+
+/* line 4225, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.specialCoverage .blue {
+  color: #336699;
+}
+
+/* - Profile Edit Page - */
+/* line 4232, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.profileFieldWrap {
+  margin-bottom: 10px;
+}
+
+/* line 4235, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.profileFieldWrap .profileLabel {
+  display: inline-block;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 4240, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.profileFieldWrap .profileEdit {
+  display: inline-block;
+}
+
+/* line 4244, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.profileFieldWrap .profileEditField {
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 0px;
+  border-bottom: 1px dotted #060606;
+  display: none;
+  width: 50%;
+}
+
+/* line 4252, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.profileFieldWrap .profileEditField:focus {
+  outline: none;
+}
+
+/* line 4258, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.profileEditSubmit {
+  margin: 0px auto 10px auto;
+  display: block;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* - Elections - */
+/* - Returns Form - */
+/* line 4269, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.returns-form fieldset {
+  margin-bottom: 20px;
+}
+
+/* line 4273, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.returns-form legend {
+  text-align: center;
+  font-family: "ubuntu", "Arial Black", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+/* line 4280, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.returns-form .candidate {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 10px auto auto;
+  padding: 10px;
+  border-bottom: 1px dashed #757575;
+}
+
+/* line 4287, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.returns-form .candidate:last-of-type {
+  border-bottom: 0px;
+}
+
+/* line 4291, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.returns-form .candidate p {
+  align-self: center;
+  font-weight: 700;
+  font-style: normal;
+  text-align: right;
+  margin-right: 25px;
+  grid-column: span 4;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 4291, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .returns-form .candidate p {
+    text-align: center;
+    margin-right: 0px;
+    grid-column: span 12;
+  }
+}
+
+/* line 4304, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.returns-form .candidate label {
+  align-self: center;
+  text-transform: uppercase;
+  justify-self: center;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  grid-column: span 4;
+}
+
+@media only screen and (max-width: 599px) {
+  /* line 4304, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+  .returns-form .candidate label {
+    grid-column: span 6;
+    margin-right: 10px;
+  }
+}
+
+/* line 4317, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.returns-form .candidate label input {
+  text-align: left;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* - Candidate Profile Submission - */
+/* line 4327, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidateForm .bold {
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 4331, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidateForm .section-subhede {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  display: block;
+  border-bottom: 1px solid #808080;
+  line-height: 1;
+  margin-top: 20px;
+}
+
+/* line 4340, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidateForm .inputWrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: auto auto 10px 25px;
+}
+
+/* line 4347, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidateForm .radioWrap {
+  width: 100%;
+}
+
+/* line 4350, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidateForm .radioWrap input {
+  margin: auto 2px auto 15px;
+}
+
+/* line 4355, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidateForm label {
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 4360, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidateForm label.basics {
+  width: 35%;
+}
+
+/* line 4364, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidateForm label.questions {
+  width: 100%;
+}
+
+/* line 4368, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidateForm label.essays {
+  text-transform: none;
+}
+
+/* line 4373, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidateForm .answer {
+  width: 100%;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 0px;
+  border-bottom: 1px dotted #060606;
+}
+
+/* line 4383, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidateForm .explanation {
+  font-size: .85rem;
+  font-style: italic;
+  margin-left: 15px;
+  text-align: center;
+}
+
+/* - Ballot Pages - */
+/* line 4394, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.raceHede {
+  text-align: center;
+}
+
+/* line 4398, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidatesWrap {
+  display: grid;
+  grid-column-gap: 1.5rem;
+  margin: 0 auto 10px auto;
+  padding: 10px;
+  max-width: 1300px;
+  grid-template-columns: repeat(12, 1fr);
+  border-bottom: 1px solid #060606;
+}
+
+/* line 4407, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidatesWrap:last-of-type {
+  border-bottom: 0px;
+}
+
+/* line 4411, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidatesWrap .candidate {
+  grid-column: span 4;
+}
+
+/* line 4414, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidatesWrap .candidate img {
+  margin: auto;
+  display: block;
+}
+
+/* line 4419, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidatesWrap .candidate p {
+  font-family: "sans", Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/* line 4424, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidatesWrap .candidate p:last-of-type {
+  margin-bottom: 10px;
+}
+
+/* line 4428, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidatesWrap .candidate p.name {
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 4432, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.candidatesWrap .candidate p a {
+  color: #336699;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* - Candidate Profile Pages - */
+/* line 4443, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.election-profile p {
+  font-family: "sans", Arial, sans-serif;
+}
+
+/* line 4447, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.election-profile .question {
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* line 4452, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.election-profile .header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "ubuntu", "Arial Black", sans-serif;
+  display: block;
+  border-bottom: 1px solid #060606;
+  margin-bottom: 20px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+/* - 2021 Returns Page - */
+/* line 4466, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.election-returns-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+/* line 4470, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.election-returns-grid .race {
+  grid-column: span 7;
+  justify-content: center;
+  text-align: center;
+  font-family: "ubuntu", "Arial Black", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+/* line 4480, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.election-returns-grid .header,
+.election-returns-grid .candidate-name {
+  grid-column: span 3;
+}
+
+/* line 4485, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.election-returns-grid .header-numbers,
+.election-returns-grid .data {
+  grid-column: span 2;
+}
+
+/* line 4490, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.election-returns-grid .header,
+.election-returns-grid .header-numbers {
+  justify-content: center;
+  text-align: center;
+  font-family: "sans", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 4498, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.election-returns-grid .candidate-name,
+.election-returns-grid .data {
+  justify-content: center;
+  text-align: center;
+}
+
+/* line 4504, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.election-returns-grid .ballot-line {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column: span 7;
+  margin-bottom: 10px;
+}
+
+/* line 4510, E:/2020 Refresh Sass - DEV/sassNinja.scss */
+.election-returns-grid .ballot-line:last-of-type {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=sassNinja.css.map */
+/*
+     FILE ARCHIVED ON 18:04:28 Apr 26, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:38:10 Jan 30, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.536
+  exclusion.robots: 0.021
+  exclusion.robots.policy: 0.01
+  esindex: 0.012
+  cdx.remote: 5.436
+  LoadShardBlock: 440.525 (3)
+  PetaboxLoader3.datanode: 396.86 (4)
+  PetaboxLoader3.resolve: 170.131 (2)
+  load_resource: 137.19
+*/
