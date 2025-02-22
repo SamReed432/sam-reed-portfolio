@@ -1,3 +1,11 @@
+html {
+	font-size: 1vw;
+
+	--accent_color: rgba(71,26,96,1.00);
+	--background_color: rgba(221, 241, 244, 0.7);
+	--box_background_color: rgba(221, 241, 244, 0.911);
+}
+
 body {
 	width: 100%;
 	margin: 0;
@@ -6,12 +14,12 @@ body {
 
 header {
 	font-family: 'Share Tech Mono', monospace;
-	font-size: 1.5vw;
+	font-size: 1.5rem;
 	display: flex;
 	flex-grow: 2;
 	justify-content: space-between;
-	margin: 1vw;
-	margin-bottom: 3vw;
+	padding: 1vw;
+	margin-bottom: 2vw;
 }
 
 nav {
@@ -21,6 +29,7 @@ nav {
 #site_logo {
 	text-decoration: none;
 	color: black;
+	margin-left: 2vw;
 }
 
 nav a {
@@ -70,7 +79,7 @@ nav a:hover {
 
 .hello {
 	width: 34%;
-	color: rgba(71,26,96,1.00);
+	color: var(--accent_color);
 	border-right: .10em solid transparent;
 	white-space: nowrap;
 	overflow: hidden;
@@ -120,7 +129,7 @@ nav a:hover {
 }
 
 #main_content_left_top {
-	font-size: 3.0vw;
+	font-size: 3.0rem;
 	display: flex;
 	align-content: flex-start;
 	flex-direction: column;
@@ -128,7 +137,7 @@ nav a:hover {
 }
 
 #main_content_left_bottom {
-	font-size: 1.5vw;
+	font-size: 1.5rem;
 	width: 100%;
 	animation: slide_in_left 2s;
 	animation-delay: 3s;
@@ -190,7 +199,7 @@ nav a:hover {
 	align-content: center;
 	flex-direction: column;
 	text-align: center;
-	font-size: 1.4vw;
+	font-size: 1.4rem;
 	margin: 2vw;
 	margin-left: 0;
 	text-decoration: none;
@@ -217,7 +226,7 @@ footer {
 	display: flex;
 	justify-content: space-around;
 	
-	background-color: rgba(245,245,245,0.40);
+	background-color: var(--box_background_color);
 	
 	margin-bottom: -1.5vw;
 	padding-top: 0.4vw;
@@ -246,7 +255,7 @@ footer {
 .school_proj {
 	font-family: 'Share Tech Mono', monospace;
 	border-right: .10em solid transparent;
-	font-size: 2vw;
+	font-size: 2rem;
 	white-space: nowrap;
 	overflow: hidden;
 	margin-left: 4vw;;
@@ -261,7 +270,7 @@ footer {
 
 
 .personal_project_home {
-	border: rgba(71,26,96,1.00) thick solid;
+	border: var(--accent_color) thick solid;
 	border-radius: 1vw;
 	padding-left: 1vw;
 	padding-right: 1vw;
@@ -318,11 +327,11 @@ footer {
 	padding-bottom: 0.5vw;
 	border: solid white thin;
 	border-radius: 1vw;
-	background-color: rgba(71,26,96,1.00);
+	background-color: var(--accent_color);
 	color:white;
 	font-family: 'Martian Mono', monospace;
 	font-weight: 600;
-	font-size: 0.75vw;
+	font-size: 0.75rem;
 	text-align: center;
 	height: 100%;
 }
@@ -331,12 +340,12 @@ footer {
 	background-color: rgba(0,0,0,0.00);
 	color:black;
 	border: none;
-	font-size: 1.5vw;
+	font-size: 1.5rem;
 }
 
 h1 {
 	font-family: 'Martian Mono', monospace;
-	font-size: 3vw;
+	font-size: 3rem;
 	border-right: .10em solid transparent;
 	white-space: nowrap;
 	overflow: hidden;
@@ -365,7 +374,7 @@ h1 {
 
 h2 {
 	font-family: 'Nunito Sans', sans-serif;
-	font-size: 1.5vw;
+	font-size: 1.5rem;
 	border-right: .10em solid transparent;
 	white-space: nowrap;
 	overflow: hidden;
@@ -399,7 +408,7 @@ h2 {
 	background-color: rgba(0,0,0,0.00);
 	color:black;
 	border: none;
-	font-size: 1.5vw;
+	font-size: 1.5rem;
 	font-family: 'Martian Mono', monospace;
 	font-weight: 600;
 	margin: 3vw;
@@ -410,7 +419,7 @@ h2 {
 .proj_description {
 	margin: 3vw;
 	margin-top: 1vw;
-	font-size: 1.2vw;
+	font-size: 1.2rem;
 	font-family: 'Nunito Sans', sans-serif;
 	font-weight: 200;
 	text-indent: 2.5vw;
@@ -423,9 +432,9 @@ h2 {
 /*PROJECTS PAGES*/
 
 .personal_project {
-	border: rgba(71,26,96,1.00) 0.25vw solid;
+	border: var(--accent_color) 0.25vw solid;
 	
-	background-color: rgba(0,0,0,0.05);
+	background-color: var(--box_background_color);
 	border-radius: 1.3vw;
 	
 	padding-left: 1vw;
@@ -452,7 +461,7 @@ h2 {
 .proj_name {
 	font-family: 'Share Tech Mono', monospace;
 	font-weight: 200;
-	font-size: 2vw;
+	font-size: 2rem;
 }
 
 .personal_proj_description {
@@ -470,7 +479,7 @@ h2 {
 }
 
 .proj_desription_block {
-	font-size: 1.25vw;
+	font-size: 1.25rem;
 	width: 65%;
 	height: 85%;
 }
@@ -478,7 +487,7 @@ h2 {
 .title {
 	font-family: 'Share Tech Mono', monospace;
 	border-right: .10em solid transparent;
-	font-size: 2vw;
+	font-size: 2rem;
 	white-space: nowrap;
 	overflow: hidden;
 	margin-left: 4vw;;
@@ -502,7 +511,7 @@ h2 {
 #mentions {
 	margin-bottom: 5vw;
 	font-family: 'Share Tech Mono', monospace;
-	font-size: 1.5vw;
+	font-size: 1.5rem;
 	
 	display: flex;
 	flex-direction: column;
@@ -534,11 +543,11 @@ h2 {
 	padding-bottom: 0.5vw;
 	border: solid white thin;
 	border-radius: 1vw;
-	background-color: rgba(71,26,96,1.00);
+	background-color: var(--accent_color);
 	color:white;
 	font-family: 'Martian Mono', monospace;
 	font-weight: 600;
-	font-size: 1.5vw;
+	font-size: 1.5rem;
 	text-align: center;
 }
 
@@ -573,13 +582,13 @@ h2 {
 .list_title {
 	font-family: monospace;
 	text-align: center;
-	font-size: 2vw;
+	font-size: 2rem;
 }
 
 #about_name {
 	font-family: 'Martian Mono', monospace;
 	text-align: center;
-	font-size: 3vw;
+	font-size: 3rem;
 	margin-top: 5vw;
 	padding-bottom: 1vw;
 }
@@ -587,7 +596,7 @@ h2 {
 #about_description {
 	font-family: 'Martian Mono', monospace;
 	text-align: center;
-	font-size: 1.2vw;
+	font-size: 1.2rem;
 	margin-top: -0.6vw;
 }
 
@@ -596,7 +605,7 @@ h2 {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	border: rgba(71,26,96,1.00) .25vw solid;
+	border: var(--accent_color) .25vw solid;
 	border-radius: 1.5vw;
 	
 	margin: 3vw;
@@ -605,7 +614,7 @@ h2 {
 
 #download_div {
 	background-color: rgb(11, 144, 210);
-	font-size: 2vw;
+	font-size: 2rem;
 	padding: 1vw;
 	color: white;
 	font-family: 'Martian Mono', monospace;
@@ -626,14 +635,14 @@ h2 {
 
 #person_of_the_week a {
 	font-family: 'Martian Mono', monospace;
-	font-size: 3vw;
+	font-size: 3rem;
 	color: black;
 }
 
 #about_contant {
 	font-family: 'Martian Mono', monospace;
 	text-align: center;
-	font-size: 1.5vw;
+	font-size: 1.5rem;
 	padding: 0;
 	margin: 0;
 }
@@ -644,7 +653,7 @@ h2 {
 }
 
 .contact_larger {
-	font-size: 2.5vw;
+	font-size: 2.5rem;
 	padding-top: 1vw;
 }
 
@@ -676,28 +685,39 @@ h2 {
 		justify-content: space-around;
 	}
 	#main_content_left_top {
-	font-size: 6vw;
+	font-size: 6rem;
 	}
 	#main_content_left_bottom {
-		font-size: 3.5vw;
+		font-size: 3.5rem;
 	}
 	#name_is {
-		font-size: 5vw;
+		font-size: 5rem;
 	}
 	.home_block img {
 		width: 10vw;
 	}
 	header {
-		font-size: 4vw;
+		font-size: 4rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 2vw;
+	}
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 8vw;
 	}
 	.home_block p {
-		font-size: 4vw;
+		font-size: 4rem;
 	}
 	.proj_name {
-		font-size: 3.5vw;
+		font-size: 3.5rem;
 	}
 	.personal_proj_description {
-		font-size: 2.5vw;
+		font-size: 2.5rem;
 		display: -webkit-box;
 		-webkit-line-clamp: 3; /* Number of lines before truncating */
 		-webkit-box-orient: vertical;
@@ -739,7 +759,7 @@ h2 {
 	
 	.about_attributes_block li {
 		
-		font-size: 3vw;
+		font-size: 3rem;
 
 	}
 	
@@ -756,15 +776,15 @@ h2 {
 	}
 	
 	.list_title {
-		font-size: 5vw;
+		font-size: 5rem;
 	}
 	
 	#about_name {
-		font-size: 6vw;
+		font-size: 6rem;
 	}
 	
 	#about_description {
-		font-size:3.5vw;
+		font-size:3.5rem;
 	}
 	
 	#person_of_the_week, #download_div {
@@ -776,16 +796,16 @@ h2 {
 	}
 	
 	#person_of_the_week a {
-		font-size: 3vw;
+		font-size: 3rem;
 	}
 	
 	#about_contant {
-		font-size: 3vw;
+		font-size: 3rem;
 
 	}
 	
 	.contact_larger {
-		font-size: 4vw;
+		font-size: 4rem;
 
 	}
 	
@@ -794,7 +814,7 @@ h2 {
 /* PROJECTS PAGE RESPONSIVENESS */
 @media only screen and (max-width: 1200px) {
 	.personal_project {
-		border: rgba(71,26,96,1.00) 0.5vw solid;
+		border: var(--accent_color) 0.5vw solid;
 		
 		border-radius: 1.3vw;
 		
@@ -806,7 +826,7 @@ h2 {
 	
 	
 	.proj_name {
-		font-size: 4vw;
+		font-size: 4rem;
 	}
 	.personal_proj_image {
 		width: 30%;
@@ -816,14 +836,14 @@ h2 {
 	}
 	
 	.proj_desription_block {
-		font-size: 2vw;
+		font-size: 2rem;
 		width: 65%;
 		height: 85%;
 	}
 	
 	.title {
 		padding: 5vw 0;
-		font-size: 5vw;
+		font-size: 5rem;
 	}
 
 	@keyframes typingE {
@@ -832,7 +852,7 @@ h2 {
 	}
 
 	.school_proj {
-		font-size: 4vw;
+		font-size: 4rem;
 	}
 	
 	#mentions {
@@ -871,7 +891,7 @@ h2 {
 		border: solid white 0.5vw;
 		border-radius: 3vw;
 	
-		font-size: 3vw;
+		font-size: 3rem;
 		padding: 2vw;
 
 		margin-bottom: 5vw;
@@ -879,11 +899,11 @@ h2 {
 	
 	#title_li {
 		width: 100%;
-		font-size: 3vw;
+		font-size: 3rem;
 	}
 	
 	h1 {
-		font-size: 5vw;
+		font-size: 5rem;
 		border-right: .10em solid transparent;
 		white-space: wrap;
 		text-wrap: pretty;
@@ -895,7 +915,7 @@ h2 {
 	}
 	
 	h2 {
-		font-size: 3vw;
+		font-size: 3rem;
 		border-right: .10em solid transparent;
 		white-space: wrap;
 		width: 100%;
@@ -921,13 +941,13 @@ h2 {
 	
 	.proj_description_title {
 		
-		font-size: 3vw;
+		font-size: 3rem;
 	}
 	
 	.proj_description {
 		margin: 3vw;
 		margin-top: 1vw;
-		font-size: 3vw;
+		font-size: 3rem;
 		text-indent: 2.5vw;
 		border: rgba(138,43,226,1.00) medium solid;
 		padding: 2vw;
@@ -937,7 +957,7 @@ h2 {
 	#mentions {
 		margin-bottom: 5vw;
 	
-		font-size: 4vw;
+		font-size: 4rem;
 		
 	}
 	
