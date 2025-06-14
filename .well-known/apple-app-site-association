@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "R2NBXRATTL.sam-reed.com.Theme-Park-Pro",
+        "paths": [ "/schedule/*" ]
+      }
+    ]
+  }
+}
