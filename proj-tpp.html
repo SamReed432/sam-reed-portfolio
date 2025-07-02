@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="sam-reed-styles.css" type="text/css">
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&family=PT+Sans&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+	.tpp-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: right;
+      margin-top: 40px;
+	  padding-right: 5%;
+
+    }
+
+    .tpp-gallery img {
+      width: 25%;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+	.proj_title_block {
+		margin-left: 5%;
+	}
+</style>
+<title>sam-reed</title>
+</head>
+
+<body>
+<header>
+<div><a href="/" id="site_logo">Sam<span class="gray_out">-</span>Reed<span class="gray_out">.com</span></a></div>
+<nav>
+	<a href="projects.html">Projects</a>	
+	<a href="about.html">About Me</a>	
+	<a href="resume.html">Resume</a>
+</nav>
+</header>
+<div class="proj_block">
+	<div class="proj_title_block">
+		<img src="tpp_icon.png" class="app_icon"/>
+		<h1>Theme Park Pro</h1>
+		<h2>2025 - </h2>
+	</div>
+	<div class="proj_img_block"> 
+		<div class="tpp-gallery">
+			<img src="app-screenshot-1.png" alt="App Screenshot 1">
+			<img src="app-screenshot-2.png" alt="App Screenshot 2">
+			<img src="app-screenshot-3.png" alt="App Screenshot 3">
+		</div>
+	</div>
+</div>
+
+<ul class="attributes_block">
+	<li id="title_li">Skills / Technologies Used:</li>
+	<li>Swift</li>
+	<li>SwiftUI</li>
+	<li>Python</li>
+	<li>Machine Learning</li>
+	<li>Node.JS</li>
+	<li>Javascript</li>
+	<li>APIs</li>
+	<li>Git</li>
+	<li>XCode</li>
+	<li>XCode Cloud</li>
+	<li>Google AdMob</li>
+
+</ul>
+	
+<div id="download_div_box">
+	<!-- <a id="download_div" href="https://apps.apple.com/sg/app/time-crunch-trivia/id6478566589">Download!</a>  
+	<a id="download_div" href="https://github.com/SamReed432/TimeCrunchTriviaSource">Source Code</a>	 -->
+</div>
+	
+<div class="proj_description_title">Project Description:</div>
+<div class="proj_description"><p>Theme Park Pro is an intelligent trip-planning app that helps users optimize their day at Theme Parks. I built it using SwiftUI and SwiftData for the iOS front end and integrated AdMob and Apple's subscription APIs to support both a free and premium experience. Users can browse parks, generate predictive wait time graphs, and create fully optimized schedules based on their preferences, all designed to minimize wait times and maximize enjoyment.</p>
+<p>The real magic happens on the backend. I trained a suite of machine learning models using Python and sci-kit-learn, based on large datasets of historical wait times and real-world factors. Feature tuning was one of the hardest parts: figuring out which variables were predictive was a huge challenge. Once tuned, the server updates a prediction cache daily, and the app pulls that ML data to generate personalized schedules using an algorithm I wrote from scratch. Time zone handling across client, server, and APIs added a surprisingly tricky edge case to that flow.</p>
+<p>Under the hood, the backend is a hybrid system: a Python-based ML service handles training and predictions, while a Node.js REST API connects the app to a MongoDB database for live and stored data. The app uses a real-time cache of external APIs to update insights as users move through their day in the park, helping guide them with up-to-date tips on what to do next.</p>
+<p>This was my first app with deep backend architecture and a full subscription model, so I also learned a ton about server management and Apple's auto-renewing subscription flow. With Theme Park Pro+, users get unlimited schedules, an ad-free experience, and access to live activities.</p>
+<p>I've always been a huge theme park fan, I love optimizing my own park days, but I know not everyone wants to spend hours planning. Theme Park Pro is my attempt to make expert-level planning accessible to anyone, and I'm especially proud of how accurate the predictions have become and how simple the UI makes the whole experience feel.</p></div>
+	
+
+<footer>
+	<a href="https://www.linkedin.com/in/samuel-reed-4b1ab922b"><img class="footer_img" src="linkedInLogo.png"></a>	
+	<a href="https://github.com/SamReed432"><img class="footer_img" src="gitHub.png"></a>
+	<a href="mailto:samreed12@att.net"><img class="footer_img" src="mailCircle.png"></a>
+</footer>
+	
+</body>
+</html>

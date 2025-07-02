@@ -10,14 +10,18 @@
 
   <title>Theme Park Pro – Plan the Perfect Park Day</title>
   <style>
-    .tpp-container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 60px 20px;
-      text-align: center;
-    	font-family: 'Poppins', monospace;
+    /* Magical Gradient Background */
+    body {
+      background: linear-gradient(135deg, #270089 0%, #05407b 100%);
+      min-height: 100vh;
+      font-family: 'Nunito Sans', 'PT Sans', Arial, sans-serif;
+      color: #231942;
     }
 
+    #site_logo, nav a {
+      color: white;
+    }
+    /* Hero Image - Revert to Original */
     .tpp-hero {
       width: 100%;
       max-width: 900px;
@@ -27,60 +31,193 @@
       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
+    /* Container */
+    .tpp-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      text-align: center;
+      font-family: 'Nunito Sans', 'PT Sans', Arial, sans-serif;
+    }
+
+    /* Headings */
     .tpp-heading {
-      font-size: 3rem;
+      font-size: 3.5rem;
       margin-bottom: 10px;
-      font-weight: 800;
-      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 900;
+      font-family: 'Martian Mono', 'Share Tech Mono', monospace;
+      color: #4b006e;
+      letter-spacing: 0.03em;
+      text-shadow: 0 2px 12px #e0c3fc;
+      margin-bottom: 0.5em;
+      line-height: 1.1;
+      position: relative;
     }
-
+    .tpp-heading::after {
+      content: '✨';
+      margin-left: 0.3em;
+      font-size: 1.2em;
+      animation: sparkle 1.8s infinite linear alternate;
+      vertical-align: middle;
+    }
+    @keyframes sparkle {
+      0% { opacity: 0.2; filter: blur(1px); }
+      100% { opacity: 1; filter: blur(0); }
+    }
     .tpp-subheading {
-      font-size: 1.25rem;
-      color: #555;
-      margin-bottom: 40px;
+      font-size: 1.5rem;
+      color: white;
+      font-weight: 700;
+      margin-bottom: 2.5em;
+      text-shadow: 0 1px 6px #fff;
+      font-family: 'Nunito Sans', 'PT Sans', Arial, sans-serif;
     }
 
-    .tpp-section {
-      margin-top: 60px;
-      text-align: left;
-    }
-
-    .tpp-section h5 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-
-    .tpp-section p {
-      font-size: 1.4rem;
-      line-height: 1.6;
-      color: #333;
-    }
-
+    /* Download Button */
     .tpp-download {
-      margin: 50px 0;
+      margin: 40px 0 30px 0;
     }
-
+    .tpp-download a {
+      display: inline-block;
+      border-radius: 16px;
+      box-shadow: 0 4px 18px rgba(71,26,96,0.13);
+      transition: transform 0.15s, box-shadow 0.15s;
+      background: linear-gradient(90deg, #a6c1ee 0%, #fbc2eb 100%);
+      padding: 0.5em 1.2em;
+    }
+    .tpp-download a:hover {
+      transform: scale(1.05) rotate(-2deg);
+      box-shadow: 0 8px 32px rgba(71,26,96,0.18);
+      background: linear-gradient(90deg, #fbc2eb 0%, #a6c1ee 100%);
+    }
     .tpp-download img {
       height: 60px;
+      filter: drop-shadow(0 2px 8px #a6c1ee);
     }
 
+    /* Section Cards */
+    .tpp-section {
+      background: rgba(255,255,255,0.96);
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(71,26,96,0.09);
+      padding: 2.5em 2em 2em 2em;
+      margin: 3em 0 0 0;
+      position: relative;
+      overflow: hidden;
+      border-left: 8px solid #a6c1ee;
+      text-align: left;
+    }
+    .tpp-section h5 {
+      font-size: 2.1rem;
+      color: #6d3bbd;
+      margin-bottom: 0.5em;
+      font-family: 'Martian Mono', 'Share Tech Mono', monospace;
+      letter-spacing: 0.02em;
+      font-weight: 800;
+    }
+    .tpp-section p {
+      font-size: 1.25rem;
+      line-height: 1.7;
+      color: #3a2a4d;
+      font-family: 'Nunito Sans', 'PT Sans', Arial, sans-serif;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    /* Gallery */
     .tpp-gallery {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 28px;
       justify-content: center;
-      margin-top: 40px;
+      margin-top: 2.5em;
     }
-
     .tpp-gallery img {
-      width: 30%;
-      border-radius: 8px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 29%;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(71,26,96,0.13);
+      border: 3px solid #fff;
+      transition: transform 0.18s, box-shadow 0.18s;
+      background: #fbc2eb;
+      display: block;
+    }
+    .tpp-gallery img:hover {
+      transform: scale(1.04) rotate(-1.5deg);
+      box-shadow: 0 16px 48px rgba(71,26,96,0.22);
+      z-index: 2;
     }
 
-    @media (max-width: 768px) {
+    /* Footer Enhancements */
+    footer {
+      background: rgba(255,255,255,0.92);
+      box-shadow: 0 -2px 18px rgba(71,26,96,0.08);
+      border-radius: 18px 18px 0 0;
+      padding: 1.2em 0 0.8em 0;
+      margin-top: 4em;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 2.5em;
+    }
+    .footer_img {
+      width: 2.5em;
+      height: 2.5em;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px #a6c1ee;
+      background: #fff;
+      padding: 0.2em;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .footer_img:hover {
+      transform: scale(1.12) rotate(-3deg);
+      box-shadow: 0 6px 24px #fbc2eb;
+      background: #fbc2eb;
+    }
+
+    /* Responsive Tweaks */
+    @media (max-width: 900px) {
+      .tpp-container {
+        padding: 30px 2vw;
+      }
+      .tpp-heading {
+        font-size: 2.1rem;
+      }
+      .tpp-section {
+        padding: 1.2em 1em 1em 1em;
+      }
       .tpp-gallery img {
         width: 90%;
+      }
+      .footer_img {
+        width: 2em;
+        height: 2em;
+      }
+      .tpp-hero {
+        max-width: 98vw;
+      }
+    }
+    @media (max-width: 600px) {
+      .tpp-heading {
+        font-size: 1.3rem;
+      }
+      .tpp-section h5 {
+        font-size: 1.1rem;
+      }
+      .tpp-section p {
+        font-size: 1rem;
+      }
+      .tpp-gallery {
+        flex-direction: column;
+        gap: 18px;
+      }
+      .tpp-gallery img {
+        width: 100%;
+      }
+      .tpp-hero {
+        max-width: 98vw;
       }
     }
   </style>
@@ -99,7 +236,7 @@
 <div class="tpp-container">
   <img src="tpp_hero.png" alt="Theme Park Pro Hero" class="tpp-hero">
 
-  <h1 class="tpp-heading">Theme Park Pro</h1>
+  <!-- <h1 class="tpp-heading">Theme Park Pro</h1> -->
   <p class="tpp-subheading">Plan your perfect park day with AI-powered tools that help you ride more and wait less.</p>
 
   <div class="tpp-download">
