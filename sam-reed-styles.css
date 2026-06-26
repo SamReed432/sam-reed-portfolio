@@ -11,6 +11,7 @@ body {
 	overflow-x: hidden;
 	margin: 0;
 	background-color: rgba(221, 241, 244, 0.7);
+	padding-bottom: 9vw;
 }
 
 header {
@@ -109,7 +110,7 @@ nav a:hover {
 		typingB 2s steps(14, end),
 		blink-caret .55s step-end 5,
 		blink-caret .8s step-end infinite;
-	animation-delay: 0.75s;
+	animation-delay: 0.5s;
 	animation-fill-mode: forwards;
 }
 
@@ -145,7 +146,7 @@ nav a:hover {
 	font-size: 1.5rem;
 	width: 100%;
 	animation: slide_in_left 2s;
-	animation-delay: 3s;
+	animation-delay: 1.5s;
 	opacity: 0%;
 	animation-fill-mode: forwards;
 
@@ -173,7 +174,7 @@ nav a:hover {
 	justify-content: center;
 	align-items: center;
 	animation: slide_in_right 2s;
-	animation-delay: 3s;
+	animation-delay: 1.5s;
 	opacity: 0%;
 	animation-fill-mode: forwards;
 	margin: 0;
@@ -295,11 +296,17 @@ footer {
 	font-optical-sizing: auto;
 	font-weight: 300;
 	font-style: normal;
-	
-	
+
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+
 	animation: slide_in_bottom 2s;
-	animation-delay: 3s;
+	animation-delay: 1.5s;
 	animation-fill-mode: forwards;
+}
+
+.personal_project_home:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 6px 16px rgba(71, 26, 96, 0.2);
 }
 
 
@@ -454,12 +461,19 @@ h2 {
 	justify-content: space-around;
 	
 	opacity: 0%;
-	
+
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+
 	animation: slide_in_bottom 2s;
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
-	
+
 	width: 70%;
+}
+
+.personal_project:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 6px 16px rgba(71, 26, 96, 0.2);
 }
 
 
